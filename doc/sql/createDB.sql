@@ -122,3 +122,6 @@ CREATE TABLE `user_info` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
+ALTER TABLE `soundsystem`.`user_device_relation` 
+ADD COLUMN `birth_month` DATE NULL AFTER `binding_time`;
+
