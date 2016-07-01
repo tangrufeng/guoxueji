@@ -124,4 +124,6 @@ CREATE TABLE `user_info` (
 
 ALTER TABLE `soundsystem`.`user_device_relation` 
 ADD COLUMN `birth_month` DATE NULL AFTER `binding_time`;
+ALTER TABLE `soundsystem`.`course` 
+ADD COLUMN `icon` VARCHAR(200) NULL AFTER `times`;
 
