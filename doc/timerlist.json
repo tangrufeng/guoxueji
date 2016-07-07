@@ -1,0 +1,273 @@
+{
+ "FileType":"1",
+ "classItems":[
+ {
+ 	"id":"1467168329216",
+ 	"module":"one",
+ 	"musics":[
+ 	{"duration":"00:03:34","img":"","name":"004夜空里的动物园","url":"http://video.fcloudclass.com/20131203/529d670a665a5.mp3","position":1},
+ 	{"duration":"00:05:29","img":"","name":"005神奇的大自然","url":"http://video.fcloudclass.com/20131203/529d6710ee5d7.mp3","position":2},
+ 	{"duration":"00:02:50","img":"","name":"001咕噜咕噜喝水啦","url":"http://video.fcloudclass.com/20131203/529d66fd94457.mp3","position":3},
+ 	{"duration":"00:08:34","img":"","name":"006夜曲手蟋蟀","url":"http://video.fcloudclass.com/20131203/529d6713697b2.mp3","position":4},
+ 	{"duration":"00:06:19","img":"","name":"002小蝌蚪找妈妈","url":"http://video.fcloudclass.com/20131203/529d66ffe7d73.mp3","position":5},
+ 	{"duration":"00:02:12","img":"","name":"007宝宝不怕","url":"http://video.fcloudclass.com/20131203/529d6714042dc.mp3","position":6},
+ 	{"duration":"00:06:54","img":"","name":"003我和小鸟一起飞","url":"http://video.fcloudclass.com/20131203/529d6706cdedf.mp3","position":7},
+ 	{"duration":"00:02:38","img":"","name":"01数字从一到十","url":"http://video.fcloudclass.com/20140120/52dc87cf140fa.mp3","position":8},
+ 	{"duration":"00:02:15","img":"","name":"02二十六个字母歌","url":"http://video.fcloudclass.com/20140120/52dc87fabcb29.mp3","position":9}
+ 	],
+ 	"timers":[{"bgTime":"0:00","endTime":"1:00","weekDay":"1"}]
+},
+{
+	"id":"1467168329222","module":"one",
+	"musics":[
+	{"duration":"00:10:35","name":"注意！冬季儿童看护一定要谨记的小tips","url":"http://fdfs.xmcdn.com/group11/M01/ED/CE/wKgDbVaTIKHwh6woAE2Ltkp8XCM916.mp3","position":1},
+	{"duration":"00:06:33","name":"什么样的孩子不适合洗澡？——友儿堂科普","url":"http://fdfs.xmcdn.com/group7/M00/E3/73/wKgDX1aTH_OSNDuCADAMsSS58Fo371.mp3","position":2},
+	{"duration":"00:06:11","name":"不吃药解决儿童肥胖症——儿科科普","url":"http://fdfs.xmcdn.com/group11/M08/81/AB/wKgDbVX_5mHzFrUSAC1ZQ_HbY7I131.mp3","position":3},
+	{"duration":"00:04:56","name":"微量元素铅超标，是不是就是铅中毒？——友儿堂科普","url":"http://fdfs.xmcdn.com/group14/M09/E6/DA/wKgDZFaYxeqSEA4jACQ027VWvwA502.mp3","position":4},
+	{"duration":"00:05:24","name":"孩子挑食厌食怎么办？——儿科科普","url":"http://fdfs.xmcdn.com/group12/M00/71/76/wKgDW1X5Ti2gGx0WACehlyAxMKE818.mp3","position":5},
+	{"duration":"00:05:04","name":"雾霾这么严重，我们的宝宝怎么办？","url":"http://fdfs.xmcdn.com/group11/M03/BD/9C/wKgDa1ZubF2hs-NsACUxGTF1dlU999.mp3","position":6},
+	{"duration":"00:04:00","name":"孩子鼻子出血是不是就是白血病？——友儿堂科普","url":"http://fdfs.xmcdn.com/group15/M01/D2/A8/wKgDaFZ6QsizIpvEAB1OU4EbFsY981.mp3","position":7},
+	{"duration":"00:04:31","name":"注意！！！儿童打呼噜可能影响智力发育？!","url":"http://fdfs.xmcdn.com/group12/M0B/98/56/wKgDXFZAbGqzZoVNACEhGWb2M6Q856.mp3","position":8},
+	{"duration":"00:06:48","name":"孕妇吃什么好，吃什么不好？说来说去，我给你缕缕","url":"http://fdfs.xmcdn.com/group10/M06/E7/15/wKgDaVacrlfi2nXXADHZ6q1bMjM671.mp3","position":9}
+	],
+	"timers":[{"bgTime":"2:01","endTime":"3:00","weekDay":"1"}]
+},
+{
+	"id":"1467168329230","module":"one",
+	"musics":[
+	{"duration":"00:04:05","img":"http://fdfs.xmcdn.com/group11/M02/C8/C3/wKgDa1Z-YqjzJiamAAC6Cs74SwM233_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.1冬天冷夏天热","url":"http://fdfs.xmcdn.com/group12/M0A/D6/39/wKgDXFZ-X6GhBAJWAB3pbd_La7M776.mp3","position":1},
+	{"duration":"00:04:09","img":"http://fdfs.xmcdn.com/group9/M05/EE/05/wKgDZlagoVOg7HOoAABr3_JBurM790_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.8到南极去找帝企鹅","url":"http://fdfs.xmcdn.com/group16/M08/ED/5E/wKgDbFaglByTtj0mAB556vXGAIA266.mp3","position":2},
+	{"duration":"00:03:50","img":"http://fdfs.xmcdn.com/group16/M08/D7/7A/wKgDbFaA6vfSzmGoAAB4Tvvf3s8683_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.6世界上最大的沙漠","url":"http://fdfs.xmcdn.com/group11/M03/EE/94/wKgDbVaUdmLTrXhsABwWfTtOuOE509.mp3","position":3},
+	{"duration":"00:04:26","img":"http://fdfs.xmcdn.com/group16/M08/D7/7A/wKgDbFaA6vfSzmGoAAB4Tvvf3s8683_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.5到第一个迎接太阳的国家看日出","url":"http://fdfs.xmcdn.com/group15/M04/DC/F9/wKgDaFaLJLKhDGG-ACCB6t2qXSo360.mp3","position":4},
+	{"duration":"00:04:06","img":"http://fdfs.xmcdn.com/group16/M08/D7/7A/wKgDbFaA6vfSzmGoAAB4Tvvf3s8683_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.4可爱又可恨的沙子","url":"http://fdfs.xmcdn.com/group12/M08/D9/5C/wKgDW1aDe4PC1k6eAB4neB8cpKs414.mp3","position":5},
+	{"duration":"00:03:55","img":"http://fdfs.xmcdn.com/group16/M04/ED/6F/wKgDbFago7rDjxEUAADU4u8WiN4944_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.7Elsa的冰山","url":"http://fdfs.xmcdn.com/group15/M0A/E7/57/wKgDaFacn1GSJx7CAByzOdKSAKA147.mp3","position":6},
+	{"duration":"00:05:41","img":"http://fdfs.xmcdn.com/group7/M03/D7/6B/wKgDWlZ-Y7HDlCx3AAC92RPHwGE340_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.3世界上独一无二的圣诞老人村","url":"http://fdfs.xmcdn.com/group15/M01/D5/90/wKgDaFZ-afWCEIVwACmwH7W53QI192.mp3","position":7},
+	{"duration":"00:04:01","img":"http://fdfs.xmcdn.com/group7/M03/D7/6B/wKgDWlZ-Y7HDlCx3AAC92RPHwGE340_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.2水从哪里来","url":"http://fdfs.xmcdn.com/group13/M09/D6/A2/wKgDXVZ-ZFLwttRhAB1sh8x6nzI056.mp3","position":8}
+	],
+	"timers":[{"bgTime":"3:01","endTime":"4:00","weekDay":"1"}]
+},
+
+{
+	"id":"1467168329235","module":"one",
+	"musics":[
+	{"duration":"00:03:34","img":"","name":"004夜空里的动物园","url":"http://video.fcloudclass.com/20131203/529d670a665a5.mp3","position":1},
+	{"duration":"00:05:29","img":"","name":"005神奇的大自然","url":"http://video.fcloudclass.com/20131203/529d6710ee5d7.mp3","position":2},
+	{"duration":"00:02:50","img":"","name":"001咕噜咕噜喝水啦","url":"http://video.fcloudclass.com/20131203/529d66fd94457.mp3","position":3},
+	{"duration":"00:08:34","img":"","name":"006夜曲手蟋蟀","url":"http://video.fcloudclass.com/20131203/529d6713697b2.mp3","position":4},
+	{"duration":"00:06:19","img":"","name":"002小蝌蚪找妈妈","url":"http://video.fcloudclass.com/20131203/529d66ffe7d73.mp3","position":5},
+	{"duration":"00:02:12","img":"","name":"007宝宝不怕","url":"http://video.fcloudclass.com/20131203/529d6714042dc.mp3","position":6},
+	{"duration":"00:06:54","img":"","name":"003我和小鸟一起飞","url":"http://video.fcloudclass.com/20131203/529d6706cdedf.mp3","position":7},
+	{"duration":"00:02:38","img":"","name":"01数字从一到十","url":"http://video.fcloudclass.com/20140120/52dc87cf140fa.mp3","position":8},
+	{"duration":"00:02:15","img":"","name":"02二十六个字母歌","url":"http://video.fcloudclass.com/20140120/52dc87fabcb29.mp3","position":9}],
+	"timers":[{"bgTime":"0:00","endTime":"1:00","weekDay":"2"}]
+},
+{
+	"id":"1467168329241","module":"one",
+	"musics":[
+	{"duration":"00:03:34","img":"","name":"004夜空里的动物园","url":"http://video.fcloudclass.com/20131203/529d670a665a5.mp3","position":1},
+	{"duration":"00:05:29","img":"","name":"005神奇的大自然","url":"http://video.fcloudclass.com/20131203/529d6710ee5d7.mp3","position":2},
+	{"duration":"00:02:50","img":"","name":"001咕噜咕噜喝水啦","url":"http://video.fcloudclass.com/20131203/529d66fd94457.mp3","position":3},
+	{"duration":"00:08:34","img":"","name":"006夜曲手蟋蟀","url":"http://video.fcloudclass.com/20131203/529d6713697b2.mp3","position":4},
+	{"duration":"00:06:19","img":"","name":"002小蝌蚪找妈妈","url":"http://video.fcloudclass.com/20131203/529d66ffe7d73.mp3","position":5},
+	{"duration":"00:02:12","img":"","name":"007宝宝不怕","url":"http://video.fcloudclass.com/20131203/529d6714042dc.mp3","position":6},
+	{"duration":"00:06:54","img":"","name":"003我和小鸟一起飞","url":"http://video.fcloudclass.com/20131203/529d6706cdedf.mp3","position":7},
+	{"duration":"00:02:38","img":"","name":"01数字从一到十","url":"http://video.fcloudclass.com/20140120/52dc87cf140fa.mp3","position":8},
+	{"duration":"00:02:15","img":"","name":"02二十六个字母歌","url":"http://video.fcloudclass.com/20140120/52dc87fabcb29.mp3","position":9}],
+	"timers":[{"bgTime":"0:00","endTime":"1:00","weekDay":"3"}]
+},
+{
+	"id":"1467168329247","module":"one",
+	"musics":[
+	{"duration":"00:03:34","img":"","name":"004夜空里的动物园","url":"http://video.fcloudclass.com/20131203/529d670a665a5.mp3","position":1},
+	{"duration":"00:05:29","img":"","name":"005神奇的大自然","url":"http://video.fcloudclass.com/20131203/529d6710ee5d7.mp3","position":2},
+	{"duration":"00:02:50","img":"","name":"001咕噜咕噜喝水啦","url":"http://video.fcloudclass.com/20131203/529d66fd94457.mp3","position":3},
+	{"duration":"00:08:34","img":"","name":"006夜曲手蟋蟀","url":"http://video.fcloudclass.com/20131203/529d6713697b2.mp3","position":4},
+	{"duration":"00:06:19","img":"","name":"002小蝌蚪找妈妈","url":"http://video.fcloudclass.com/20131203/529d66ffe7d73.mp3","position":5},
+	{"duration":"00:02:12","img":"","name":"007宝宝不怕","url":"http://video.fcloudclass.com/20131203/529d6714042dc.mp3","position":6},
+	{"duration":"00:06:54","img":"","name":"003我和小鸟一起飞","url":"http://video.fcloudclass.com/20131203/529d6706cdedf.mp3","position":7},
+	{"duration":"00:02:38","img":"","name":"01数字从一到十","url":"http://video.fcloudclass.com/20140120/52dc87cf140fa.mp3","position":8},
+	{"duration":"00:02:15","img":"","name":"02二十六个字母歌","url":"http://video.fcloudclass.com/20140120/52dc87fabcb29.mp3","position":9}],
+	"timers":[{"bgTime":"0:00","endTime":"1:00","weekDay":"4"}]
+},
+{
+	"id":"1467168329254","module":"one","musics":[{"duration":"00:03:34","img":"","name":"004夜空里的动物园","url":"http://video.fcloudclass.com/20131203/529d670a665a5.mp3","position":1},
+	{"duration":"00:05:29","img":"","name":"005神奇的大自然","url":"http://video.fcloudclass.com/20131203/529d6710ee5d7.mp3","position":2},
+	{"duration":"00:02:50","img":"","name":"001咕噜咕噜喝水啦","url":"http://video.fcloudclass.com/20131203/529d66fd94457.mp3","position":3},
+	{"duration":"00:08:34","img":"","name":"006夜曲手蟋蟀","url":"http://video.fcloudclass.com/20131203/529d6713697b2.mp3","position":4},
+	{"duration":"00:06:19","img":"","name":"002小蝌蚪找妈妈","url":"http://video.fcloudclass.com/20131203/529d66ffe7d73.mp3","position":5},
+	{"duration":"00:02:12","img":"","name":"007宝宝不怕","url":"http://video.fcloudclass.com/20131203/529d6714042dc.mp3","position":6},
+	{"duration":"00:06:54","img":"","name":"003我和小鸟一起飞","url":"http://video.fcloudclass.com/20131203/529d6706cdedf.mp3","position":7},
+	{"duration":"00:02:38","img":"","name":"01数字从一到十","url":"http://video.fcloudclass.com/20140120/52dc87cf140fa.mp3","position":8},
+	{"duration":"00:02:15","img":"","name":"02二十六个字母歌","url":"http://video.fcloudclass.com/20140120/52dc87fabcb29.mp3","position":9}],
+	"timers":[{"bgTime":"0:00","endTime":"1:00","weekDay":"5"}]
+},
+{
+	"id":"1467168329260","module":"one",
+	"musics":[
+	{"duration":"00:03:34","img":"","name":"004夜空里的动物园","url":"http://video.fcloudclass.com/20131203/529d670a665a5.mp3","position":1},
+	{"duration":"00:05:29","img":"","name":"005神奇的大自然","url":"http://video.fcloudclass.com/20131203/529d6710ee5d7.mp3","position":2},
+	{"duration":"00:02:50","img":"","name":"001咕噜咕噜喝水啦","url":"http://video.fcloudclass.com/20131203/529d66fd94457.mp3","position":3},
+	{"duration":"00:08:34","img":"","name":"006夜曲手蟋蟀","url":"http://video.fcloudclass.com/20131203/529d6713697b2.mp3","position":4},
+	{"duration":"00:06:19","img":"","name":"002小蝌蚪找妈妈","url":"http://video.fcloudclass.com/20131203/529d66ffe7d73.mp3","position":5},
+	{"duration":"00:02:12","img":"","name":"007宝宝不怕","url":"http://video.fcloudclass.com/20131203/529d6714042dc.mp3","position":6},
+	{"duration":"00:06:54","img":"","name":"003我和小鸟一起飞","url":"http://video.fcloudclass.com/20131203/529d6706cdedf.mp3","position":7},
+	{"duration":"00:02:38","img":"","name":"01数字从一到十","url":"http://video.fcloudclass.com/20140120/52dc87cf140fa.mp3","position":8},
+	{"duration":"00:02:15","img":"","name":"02二十六个字母歌","url":"http://video.fcloudclass.com/20140120/52dc87fabcb29.mp3","position":9}],
+	"timers":[{"bgTime":"0:00","endTime":"1:00","weekDay":"6"}]},
+{
+	"id":"1467168329266","module":"one","musics":[{"duration":"00:03:34","img":"","name":"004夜空里的动物园","url":"http://video.fcloudclass.com/20131203/529d670a665a5.mp3","position":1},
+	{"duration":"00:05:29","img":"","name":"005神奇的大自然","url":"http://video.fcloudclass.com/20131203/529d6710ee5d7.mp3","position":2},
+	{"duration":"00:02:50","img":"","name":"001咕噜咕噜喝水啦","url":"http://video.fcloudclass.com/20131203/529d66fd94457.mp3","position":3},
+	{"duration":"00:08:34","img":"","name":"006夜曲手蟋蟀","url":"http://video.fcloudclass.com/20131203/529d6713697b2.mp3","position":4},
+	{"duration":"00:06:19","img":"","name":"002小蝌蚪找妈妈","url":"http://video.fcloudclass.com/20131203/529d66ffe7d73.mp3","position":5},
+	{"duration":"00:02:12","img":"","name":"007宝宝不怕","url":"http://video.fcloudclass.com/20131203/529d6714042dc.mp3","position":6},
+	{"duration":"00:06:54","img":"","name":"003我和小鸟一起飞","url":"http://video.fcloudclass.com/20131203/529d6706cdedf.mp3","position":7},
+	{"duration":"00:02:38","img":"","name":"01数字从一到十","url":"http://video.fcloudclass.com/20140120/52dc87cf140fa.mp3","position":8},
+	{"duration":"00:02:15","img":"","name":"02二十六个字母歌","url":"http://video.fcloudclass.com/20140120/52dc87fabcb29.mp3","position":9}],
+	"timers":[{"bgTime":"0:00","endTime":"1:00","weekDay":"7"}]
+},
+{
+	"id":"1467168329271","module":"one",
+	"musics":[
+	{"duration":"00:10:35","img":"http://fdfs.xmcdn.com/group7/M03/66/29/wKgDX1Xe67nwj91DAAAzpieGm7E475_mobile_large.jpg","name":"注意！冬季儿童看护一定要谨记的小tips","url":"http://fdfs.xmcdn.com/group11/M01/ED/CE/wKgDbVaTIKHwh6woAE2Ltkp8XCM916.mp3","position":1},
+	{"duration":"00:06:33","img":"http://fdfs.xmcdn.com/group7/M00/E3/69/wKgDWlaTH9LCSfppAABexXkRmmk112_mobile_large.jpg","name":"什么样的孩子不适合洗澡？——友儿堂科普","url":"http://fdfs.xmcdn.com/group7/M00/E3/73/wKgDX1aTH_OSNDuCADAMsSS58Fo371.mp3","position":2},
+	{"duration":"00:06:11","img":"http://fdfs.xmcdn.com/group16/M08/75/77/wKgDbFX_5pTh3Af2AABlWjpLNc8997_mobile_large.jpg","name":"不吃药解决儿童肥胖症——儿科科普","url":"http://fdfs.xmcdn.com/group11/M08/81/AB/wKgDbVX_5mHzFrUSAC1ZQ_HbY7I131.mp3","position":3},
+	{"duration":"00:04:56","img":"http://fdfs.xmcdn.com/group7/M03/66/29/wKgDX1Xe67nwj91DAAAzpieGm7E475_mobile_large.jpg","name":"微量元素铅超标，是不是就是铅中毒？——友儿堂科普","url":"http://fdfs.xmcdn.com/group14/M09/E6/DA/wKgDZFaYxeqSEA4jACQ027VWvwA502.mp3","position":4},
+	{"duration":"00:05:24","img":"http://fdfs.xmcdn.com/group13/M01/72/62/wKgDXlX5TdvhIQtrAAQ15Ob_PtU129_mobile_large.jpg","name":"孩子挑食厌食怎么办？——儿科科普","url":"http://fdfs.xmcdn.com/group12/M00/71/76/wKgDW1X5Ti2gGx0WACehlyAxMKE818.mp3","position":5},
+	{"duration":"00:05:04","img":"http://fdfs.xmcdn.com/group12/M06/CA/D5/wKgDW1ZubC6RpgcBAABOT2w887E640_mobile_large.jpg","name":"雾霾这么严重，我们的宝宝怎么办？","url":"http://fdfs.xmcdn.com/group11/M03/BD/9C/wKgDa1ZubF2hs-NsACUxGTF1dlU999.mp3","position":6},
+	{"duration":"00:04:00","img":"http://fdfs.xmcdn.com/group15/M01/D2/72/wKgDZVZ6QsTR98TXAADWnQvJpOw114_mobile_large.png","name":"孩子鼻子出血是不是就是白血病？——友儿堂科普","url":"http://fdfs.xmcdn.com/group15/M01/D2/A8/wKgDaFZ6QsizIpvEAB1OU4EbFsY981.mp3","position":7},
+	{"duration":"00:04:31","img":"http://fdfs.xmcdn.com/group10/M0A/98/AB/wKgDaVZAbIyx1hk7AABaTyIqHvY866_mobile_large.gif","name":"注意！！！儿童打呼噜可能影响智力发育？!","url":"http://fdfs.xmcdn.com/group12/M0B/98/56/wKgDXFZAbGqzZoVNACEhGWb2M6Q856.mp3","position":8},
+	{"duration":"00:06:48","img":"http://fdfs.xmcdn.com/group7/M03/66/29/wKgDX1Xe67nwj91DAAAzpieGm7E475_mobile_large.jpg","name":"孕妇吃什么好，吃什么不好？说来说去，我给你缕缕","url":"http://fdfs.xmcdn.com/group10/M06/E7/15/wKgDaVacrlfi2nXXADHZ6q1bMjM671.mp3","position":9}],
+	"timers":[{"bgTime":"2:01","endTime":"3:00","weekDay":"2"}]
+},
+{
+	"id":"1467168329278","module":"one","musics":[{"duration":"00:10:35","img":"http://fdfs.xmcdn.com/group7/M03/66/29/wKgDX1Xe67nwj91DAAAzpieGm7E475_mobile_large.jpg","name":"注意！冬季儿童看护一定要谨记的小tips","url":"http://fdfs.xmcdn.com/group11/M01/ED/CE/wKgDbVaTIKHwh6woAE2Ltkp8XCM916.mp3","position":1},
+	{"duration":"00:06:33","img":"http://fdfs.xmcdn.com/group7/M00/E3/69/wKgDWlaTH9LCSfppAABexXkRmmk112_mobile_large.jpg","name":"什么样的孩子不适合洗澡？——友儿堂科普","url":"http://fdfs.xmcdn.com/group7/M00/E3/73/wKgDX1aTH_OSNDuCADAMsSS58Fo371.mp3","position":2},
+	{"duration":"00:06:11","img":"http://fdfs.xmcdn.com/group16/M08/75/77/wKgDbFX_5pTh3Af2AABlWjpLNc8997_mobile_large.jpg","name":"不吃药解决儿童肥胖症——儿科科普","url":"http://fdfs.xmcdn.com/group11/M08/81/AB/wKgDbVX_5mHzFrUSAC1ZQ_HbY7I131.mp3","position":3},
+	{"duration":"00:04:56","img":"http://fdfs.xmcdn.com/group7/M03/66/29/wKgDX1Xe67nwj91DAAAzpieGm7E475_mobile_large.jpg","name":"微量元素铅超标，是不是就是铅中毒？——友儿堂科普","url":"http://fdfs.xmcdn.com/group14/M09/E6/DA/wKgDZFaYxeqSEA4jACQ027VWvwA502.mp3","position":4},
+	{"duration":"00:05:24","img":"http://fdfs.xmcdn.com/group13/M01/72/62/wKgDXlX5TdvhIQtrAAQ15Ob_PtU129_mobile_large.jpg","name":"孩子挑食厌食怎么办？——儿科科普","url":"http://fdfs.xmcdn.com/group12/M00/71/76/wKgDW1X5Ti2gGx0WACehlyAxMKE818.mp3","position":5},
+	{"duration":"00:05:04","img":"http://fdfs.xmcdn.com/group12/M06/CA/D5/wKgDW1ZubC6RpgcBAABOT2w887E640_mobile_large.jpg","name":"雾霾这么严重，我们的宝宝怎么办？","url":"http://fdfs.xmcdn.com/group11/M03/BD/9C/wKgDa1ZubF2hs-NsACUxGTF1dlU999.mp3","position":6},{"duration":"00:04:00","img":"http://fdfs.xmcdn.com/group15/M01/D2/72/wKgDZVZ6QsTR98TXAADWnQvJpOw114_mobile_large.png","name":"孩子鼻子出血是不是就是白血病？——友儿堂科普","url":"http://fdfs.xmcdn.com/group15/M01/D2/A8/wKgDaFZ6QsizIpvEAB1OU4EbFsY981.mp3","position":7},
+	{"duration":"00:04:31","img":"http://fdfs.xmcdn.com/group10/M0A/98/AB/wKgDaVZAbIyx1hk7AABaTyIqHvY866_mobile_large.gif","name":"注意！！！儿童打呼噜可能影响智力发育？!","url":"http://fdfs.xmcdn.com/group12/M0B/98/56/wKgDXFZAbGqzZoVNACEhGWb2M6Q856.mp3","position":8},
+	{"duration":"00:06:48","img":"http://fdfs.xmcdn.com/group7/M03/66/29/wKgDX1Xe67nwj91DAAAzpieGm7E475_mobile_large.jpg","name":"孕妇吃什么好，吃什么不好？说来说去，我给你缕缕","url":"http://fdfs.xmcdn.com/group10/M06/E7/15/wKgDaVacrlfi2nXXADHZ6q1bMjM671.mp3","position":9}],
+	"timers":[{"bgTime":"2:01","endTime":"3:00","weekDay":"3"}]
+},
+{
+	"id":"1467168329282","module":"one","musics":[{"duration":"00:10:35","img":"http://fdfs.xmcdn.com/group7/M03/66/29/wKgDX1Xe67nwj91DAAAzpieGm7E475_mobile_large.jpg","name":"注意！冬季儿童看护一定要谨记的小tips","url":"http://fdfs.xmcdn.com/group11/M01/ED/CE/wKgDbVaTIKHwh6woAE2Ltkp8XCM916.mp3","position":1},
+	{"duration":"00:06:33","img":"http://fdfs.xmcdn.com/group7/M00/E3/69/wKgDWlaTH9LCSfppAABexXkRmmk112_mobile_large.jpg","name":"什么样的孩子不适合洗澡？——友儿堂科普","url":"http://fdfs.xmcdn.com/group7/M00/E3/73/wKgDX1aTH_OSNDuCADAMsSS58Fo371.mp3","position":2},
+	{"duration":"00:06:11","img":"http://fdfs.xmcdn.com/group16/M08/75/77/wKgDbFX_5pTh3Af2AABlWjpLNc8997_mobile_large.jpg","name":"不吃药解决儿童肥胖症——儿科科普","url":"http://fdfs.xmcdn.com/group11/M08/81/AB/wKgDbVX_5mHzFrUSAC1ZQ_HbY7I131.mp3","position":3},
+	{"duration":"00:04:56","img":"http://fdfs.xmcdn.com/group7/M03/66/29/wKgDX1Xe67nwj91DAAAzpieGm7E475_mobile_large.jpg","name":"微量元素铅超标，是不是就是铅中毒？——友儿堂科普","url":"http://fdfs.xmcdn.com/group14/M09/E6/DA/wKgDZFaYxeqSEA4jACQ027VWvwA502.mp3","position":4},
+	{"duration":"00:05:24","img":"http://fdfs.xmcdn.com/group13/M01/72/62/wKgDXlX5TdvhIQtrAAQ15Ob_PtU129_mobile_large.jpg","name":"孩子挑食厌食怎么办？——儿科科普","url":"http://fdfs.xmcdn.com/group12/M00/71/76/wKgDW1X5Ti2gGx0WACehlyAxMKE818.mp3","position":5},
+	{"duration":"00:05:04","img":"http://fdfs.xmcdn.com/group12/M06/CA/D5/wKgDW1ZubC6RpgcBAABOT2w887E640_mobile_large.jpg","name":"雾霾这么严重，我们的宝宝怎么办？","url":"http://fdfs.xmcdn.com/group11/M03/BD/9C/wKgDa1ZubF2hs-NsACUxGTF1dlU999.mp3","position":6},
+	{"duration":"00:04:00","img":"http://fdfs.xmcdn.com/group15/M01/D2/72/wKgDZVZ6QsTR98TXAADWnQvJpOw114_mobile_large.png","name":"孩子鼻子出血是不是就是白血病？——友儿堂科普","url":"http://fdfs.xmcdn.com/group15/M01/D2/A8/wKgDaFZ6QsizIpvEAB1OU4EbFsY981.mp3","position":7},
+	{"duration":"00:04:31","img":"http://fdfs.xmcdn.com/group10/M0A/98/AB/wKgDaVZAbIyx1hk7AABaTyIqHvY866_mobile_large.gif","name":"注意！！！儿童打呼噜可能影响智力发育？!","url":"http://fdfs.xmcdn.com/group12/M0B/98/56/wKgDXFZAbGqzZoVNACEhGWb2M6Q856.mp3","position":8},
+	{"duration":"00:06:48","img":"http://fdfs.xmcdn.com/group7/M03/66/29/wKgDX1Xe67nwj91DAAAzpieGm7E475_mobile_large.jpg","name":"孕妇吃什么好，吃什么不好？说来说去，我给你缕缕","url":"http://fdfs.xmcdn.com/group10/M06/E7/15/wKgDaVacrlfi2nXXADHZ6q1bMjM671.mp3","position":9}],
+	"timers":[{"bgTime":"2:01","endTime":"3:00","weekDay":"4"}]
+},
+{
+	"id":"1467168329288","module":"one","musics":[{"duration":"00:10:35","img":"http://fdfs.xmcdn.com/group7/M03/66/29/wKgDX1Xe67nwj91DAAAzpieGm7E475_mobile_large.jpg","name":"注意！冬季儿童看护一定要谨记的小tips","url":"http://fdfs.xmcdn.com/group11/M01/ED/CE/wKgDbVaTIKHwh6woAE2Ltkp8XCM916.mp3","position":1},
+	{"duration":"00:06:33","img":"http://fdfs.xmcdn.com/group7/M00/E3/69/wKgDWlaTH9LCSfppAABexXkRmmk112_mobile_large.jpg","name":"什么样的孩子不适合洗澡？——友儿堂科普","url":"http://fdfs.xmcdn.com/group7/M00/E3/73/wKgDX1aTH_OSNDuCADAMsSS58Fo371.mp3","position":2},
+	{"duration":"00:06:11","img":"http://fdfs.xmcdn.com/group16/M08/75/77/wKgDbFX_5pTh3Af2AABlWjpLNc8997_mobile_large.jpg","name":"不吃药解决儿童肥胖症——儿科科普","url":"http://fdfs.xmcdn.com/group11/M08/81/AB/wKgDbVX_5mHzFrUSAC1ZQ_HbY7I131.mp3","position":3},
+	{"duration":"00:04:56","img":"http://fdfs.xmcdn.com/group7/M03/66/29/wKgDX1Xe67nwj91DAAAzpieGm7E475_mobile_large.jpg","name":"微量元素铅超标，是不是就是铅中毒？——友儿堂科普","url":"http://fdfs.xmcdn.com/group14/M09/E6/DA/wKgDZFaYxeqSEA4jACQ027VWvwA502.mp3","position":4},
+	{"duration":"00:05:24","img":"http://fdfs.xmcdn.com/group13/M01/72/62/wKgDXlX5TdvhIQtrAAQ15Ob_PtU129_mobile_large.jpg","name":"孩子挑食厌食怎么办？——儿科科普","url":"http://fdfs.xmcdn.com/group12/M00/71/76/wKgDW1X5Ti2gGx0WACehlyAxMKE818.mp3","position":5},
+	{"duration":"00:05:04","img":"http://fdfs.xmcdn.com/group12/M06/CA/D5/wKgDW1ZubC6RpgcBAABOT2w887E640_mobile_large.jpg","name":"雾霾这么严重，我们的宝宝怎么办？","url":"http://fdfs.xmcdn.com/group11/M03/BD/9C/wKgDa1ZubF2hs-NsACUxGTF1dlU999.mp3","position":6},
+	{"duration":"00:04:00","img":"http://fdfs.xmcdn.com/group15/M01/D2/72/wKgDZVZ6QsTR98TXAADWnQvJpOw114_mobile_large.png","name":"孩子鼻子出血是不是就是白血病？——友儿堂科普","url":"http://fdfs.xmcdn.com/group15/M01/D2/A8/wKgDaFZ6QsizIpvEAB1OU4EbFsY981.mp3","position":7},
+	{"duration":"00:04:31","img":"http://fdfs.xmcdn.com/group10/M0A/98/AB/wKgDaVZAbIyx1hk7AABaTyIqHvY866_mobile_large.gif","name":"注意！！！儿童打呼噜可能影响智力发育？!","url":"http://fdfs.xmcdn.com/group12/M0B/98/56/wKgDXFZAbGqzZoVNACEhGWb2M6Q856.mp3","position":8},
+	{"duration":"00:06:48","img":"http://fdfs.xmcdn.com/group7/M03/66/29/wKgDX1Xe67nwj91DAAAzpieGm7E475_mobile_large.jpg","name":"孕妇吃什么好，吃什么不好？说来说去，我给你缕缕","url":"http://fdfs.xmcdn.com/group10/M06/E7/15/wKgDaVacrlfi2nXXADHZ6q1bMjM671.mp3","position":9}],
+	"timers":[{"bgTime":"2:01","endTime":"3:00","weekDay":"5"}]
+},
+{
+	"id":"1467168329292","module":"one","musics":[
+	{"duration":"00:10:35","img":"http://fdfs.xmcdn.com/group7/M03/66/29/wKgDX1Xe67nwj91DAAAzpieGm7E475_mobile_large.jpg","name":"注意！冬季儿童看护一定要谨记的小tips","url":"http://fdfs.xmcdn.com/group11/M01/ED/CE/wKgDbVaTIKHwh6woAE2Ltkp8XCM916.mp3","position":1},
+	{"duration":"00:06:33","img":"http://fdfs.xmcdn.com/group7/M00/E3/69/wKgDWlaTH9LCSfppAABexXkRmmk112_mobile_large.jpg","name":"什么样的孩子不适合洗澡？——友儿堂科普","url":"http://fdfs.xmcdn.com/group7/M00/E3/73/wKgDX1aTH_OSNDuCADAMsSS58Fo371.mp3","position":2},
+	{"duration":"00:06:11","img":"http://fdfs.xmcdn.com/group16/M08/75/77/wKgDbFX_5pTh3Af2AABlWjpLNc8997_mobile_large.jpg","name":"不吃药解决儿童肥胖症——儿科科普","url":"http://fdfs.xmcdn.com/group11/M08/81/AB/wKgDbVX_5mHzFrUSAC1ZQ_HbY7I131.mp3","position":3},
+	{"duration":"00:04:56","img":"http://fdfs.xmcdn.com/group7/M03/66/29/wKgDX1Xe67nwj91DAAAzpieGm7E475_mobile_large.jpg","name":"微量元素铅超标，是不是就是铅中毒？——友儿堂科普","url":"http://fdfs.xmcdn.com/group14/M09/E6/DA/wKgDZFaYxeqSEA4jACQ027VWvwA502.mp3","position":4},
+	{"duration":"00:05:24","img":"http://fdfs.xmcdn.com/group13/M01/72/62/wKgDXlX5TdvhIQtrAAQ15Ob_PtU129_mobile_large.jpg","name":"孩子挑食厌食怎么办？——儿科科普","url":"http://fdfs.xmcdn.com/group12/M00/71/76/wKgDW1X5Ti2gGx0WACehlyAxMKE818.mp3","position":5},
+	{"duration":"00:05:04","img":"http://fdfs.xmcdn.com/group12/M06/CA/D5/wKgDW1ZubC6RpgcBAABOT2w887E640_mobile_large.jpg","name":"雾霾这么严重，我们的宝宝怎么办？","url":"http://fdfs.xmcdn.com/group11/M03/BD/9C/wKgDa1ZubF2hs-NsACUxGTF1dlU999.mp3","position":6},
+	{"duration":"00:04:00","img":"http://fdfs.xmcdn.com/group15/M01/D2/72/wKgDZVZ6QsTR98TXAADWnQvJpOw114_mobile_large.png","name":"孩子鼻子出血是不是就是白血病？——友儿堂科普","url":"http://fdfs.xmcdn.com/group15/M01/D2/A8/wKgDaFZ6QsizIpvEAB1OU4EbFsY981.mp3","position":7},
+	{"duration":"00:04:31","img":"http://fdfs.xmcdn.com/group10/M0A/98/AB/wKgDaVZAbIyx1hk7AABaTyIqHvY866_mobile_large.gif","name":"注意！！！儿童打呼噜可能影响智力发育？!","url":"http://fdfs.xmcdn.com/group12/M0B/98/56/wKgDXFZAbGqzZoVNACEhGWb2M6Q856.mp3","position":8},
+	{"duration":"00:06:48","img":"http://fdfs.xmcdn.com/group7/M03/66/29/wKgDX1Xe67nwj91DAAAzpieGm7E475_mobile_large.jpg","name":"孕妇吃什么好，吃什么不好？说来说去，我给你缕缕","url":"http://fdfs.xmcdn.com/group10/M06/E7/15/wKgDaVacrlfi2nXXADHZ6q1bMjM671.mp3","position":9}],
+	"timers":[{"bgTime":"2:01","endTime":"3:00","weekDay":"6"}]
+},
+{
+	"id":"1467168329298","module":"one","musics":[
+	{"duration":"00:10:35","img":"http://fdfs.xmcdn.com/group7/M03/66/29/wKgDX1Xe67nwj91DAAAzpieGm7E475_mobile_large.jpg","name":"注意！冬季儿童看护一定要谨记的小tips","url":"http://fdfs.xmcdn.com/group11/M01/ED/CE/wKgDbVaTIKHwh6woAE2Ltkp8XCM916.mp3","position":1},
+	{"duration":"00:06:33","img":"http://fdfs.xmcdn.com/group7/M00/E3/69/wKgDWlaTH9LCSfppAABexXkRmmk112_mobile_large.jpg","name":"什么样的孩子不适合洗澡？——友儿堂科普","url":"http://fdfs.xmcdn.com/group7/M00/E3/73/wKgDX1aTH_OSNDuCADAMsSS58Fo371.mp3","position":2},
+	{"duration":"00:06:11","img":"http://fdfs.xmcdn.com/group16/M08/75/77/wKgDbFX_5pTh3Af2AABlWjpLNc8997_mobile_large.jpg","name":"不吃药解决儿童肥胖症——儿科科普","url":"http://fdfs.xmcdn.com/group11/M08/81/AB/wKgDbVX_5mHzFrUSAC1ZQ_HbY7I131.mp3","position":3},
+	{"duration":"00:04:56","img":"http://fdfs.xmcdn.com/group7/M03/66/29/wKgDX1Xe67nwj91DAAAzpieGm7E475_mobile_large.jpg","name":"微量元素铅超标，是不是就是铅中毒？——友儿堂科普","url":"http://fdfs.xmcdn.com/group14/M09/E6/DA/wKgDZFaYxeqSEA4jACQ027VWvwA502.mp3","position":4},
+	{"duration":"00:05:24","img":"http://fdfs.xmcdn.com/group13/M01/72/62/wKgDXlX5TdvhIQtrAAQ15Ob_PtU129_mobile_large.jpg","name":"孩子挑食厌食怎么办？——儿科科普","url":"http://fdfs.xmcdn.com/group12/M00/71/76/wKgDW1X5Ti2gGx0WACehlyAxMKE818.mp3","position":5},
+	{"duration":"00:05:04","img":"http://fdfs.xmcdn.com/group12/M06/CA/D5/wKgDW1ZubC6RpgcBAABOT2w887E640_mobile_large.jpg","name":"雾霾这么严重，我们的宝宝怎么办？","url":"http://fdfs.xmcdn.com/group11/M03/BD/9C/wKgDa1ZubF2hs-NsACUxGTF1dlU999.mp3","position":6},
+	{"duration":"00:04:00","img":"http://fdfs.xmcdn.com/group15/M01/D2/72/wKgDZVZ6QsTR98TXAADWnQvJpOw114_mobile_large.png","name":"孩子鼻子出血是不是就是白血病？——友儿堂科普","url":"http://fdfs.xmcdn.com/group15/M01/D2/A8/wKgDaFZ6QsizIpvEAB1OU4EbFsY981.mp3","position":7},
+	{"duration":"00:04:31","img":"http://fdfs.xmcdn.com/group10/M0A/98/AB/wKgDaVZAbIyx1hk7AABaTyIqHvY866_mobile_large.gif","name":"注意！！！儿童打呼噜可能影响智力发育？!","url":"http://fdfs.xmcdn.com/group12/M0B/98/56/wKgDXFZAbGqzZoVNACEhGWb2M6Q856.mp3","position":8},
+	{"duration":"00:06:48","img":"http://fdfs.xmcdn.com/group7/M03/66/29/wKgDX1Xe67nwj91DAAAzpieGm7E475_mobile_large.jpg","name":"孕妇吃什么好，吃什么不好？说来说去，我给你缕缕","url":"http://fdfs.xmcdn.com/group10/M06/E7/15/wKgDaVacrlfi2nXXADHZ6q1bMjM671.mp3","position":9}],
+	"timers":[{"bgTime":"2:01","endTime":"3:00","weekDay":"7"}]
+},
+{
+	"id":"1467168329302","module":"one","musics":[
+	{"duration":"00:04:05","img":"http://fdfs.xmcdn.com/group11/M02/C8/C3/wKgDa1Z-YqjzJiamAAC6Cs74SwM233_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.1冬天冷夏天热","url":"http://fdfs.xmcdn.com/group12/M0A/D6/39/wKgDXFZ-X6GhBAJWAB3pbd_La7M776.mp3","position":1},
+	{"duration":"00:04:09","img":"http://fdfs.xmcdn.com/group9/M05/EE/05/wKgDZlagoVOg7HOoAABr3_JBurM790_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.8到南极去找帝企鹅","url":"http://fdfs.xmcdn.com/group16/M08/ED/5E/wKgDbFaglByTtj0mAB556vXGAIA266.mp3","position":2},
+	{"duration":"00:03:50","img":"http://fdfs.xmcdn.com/group16/M08/D7/7A/wKgDbFaA6vfSzmGoAAB4Tvvf3s8683_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.6世界上最大的沙漠","url":"http://fdfs.xmcdn.com/group11/M03/EE/94/wKgDbVaUdmLTrXhsABwWfTtOuOE509.mp3","position":3},
+	{"duration":"00:04:26","img":"http://fdfs.xmcdn.com/group16/M08/D7/7A/wKgDbFaA6vfSzmGoAAB4Tvvf3s8683_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.5到第一个迎接太阳的国家看日出","url":"http://fdfs.xmcdn.com/group15/M04/DC/F9/wKgDaFaLJLKhDGG-ACCB6t2qXSo360. mp3","position":4},
+	{"duration":"00:04:06","img":"http://fdfs.xmcdn.com/group16/M08/D7/7A/wKgDbFaA6vfSzmGoAAB4Tvvf3s8683_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.4可爱又可恨的沙子","url":"http://fdfs.xmcdn.com/group12/M08/D9/5C/wKgDW1aDe4PC1k6eAB4neB8cpKs414.mp3","position":5},
+	{"duration":"00:03:55","img":"http://fdfs.xmcdn.com/group16/M04/ED/6F/wKgDbFago7rDjxEUAADU4u8WiN4944_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.7Elsa的冰山","url":"http://fdfs.xmcdn.com/group15/M0A/E7/57/wKgDaFacn1GSJx7CAByzOdKSAKA147.mp3","position":6},
+	{"duration":"00:05:41","img":"http://fdfs.xmcdn.com/group7/M03/D7/6B/wKgDWlZ-Y7HDlCx3AAC92RPHwGE340_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.3世界上独一无二的圣诞老人村","url":"http://fdfs.xmcdn.com/group15/M01/D5/90/wKgDaFZ-afWCEIVwACmwH7W53QI192.mp3","position":7},
+	{"duration":"00:04:01","img":"http://fdfs.xmcdn.com/group7/M03/D7/6B/wKgDWlZ-Y7HDlCx3AAC92RPHwGE340_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.2水从哪里来","url":"http://fdfs.xmcdn.com/group13/M09/D6/A2/wKgDXVZ-ZFLwttRhAB1sh8x6nzI056.mp3","position":8}],
+	"timers":[{"bgTime":"3:01","endTime":"4:00","weekDay":"2"}]
+},
+{
+	"id":"1467168329306","module":"one","musics":[{"duration":"00:04:05","img":"http://fdfs.xmcdn.com/group11/M02/C8/C3/wKgDa1Z-YqjzJiamAAC6Cs74SwM233_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.1冬天冷夏天热","url":"http://fdfs.xmcdn.com/group12/M0A/D6/39/wKgDXFZ-X6GhBAJWAB3pbd_La7M776.mp3","position":1},
+	{"duration":"00:04:09","img":"http://fdfs.xmcdn.com/group9/M05/EE/05/wKgDZlagoVOg7HOoAABr3_JBurM790_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.8到南极去找帝企鹅","url":"http://fdfs.xmcdn.com/group16/M08/ED/5E/wKgDbFaglByTtj0mAB556vXGAIA266.mp3","position":2},
+	{"duration":"00:03:50","img":"http://fdfs.xmcdn.com/group16/M08/D7/7A/wKgDbFaA6vfSzmGoAAB4Tvvf3s8683_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.6世界上最大的沙漠","url":"http://fdfs.xmcdn.com/group11/M03/EE/94/wKgDbVaUdmLTrXhsABwWfTtOuOE509.mp3","position":3},
+	{"duration":"00:04:26","img":"http://fdfs.xmcdn.com/group16/M08/D7/7A/wKgDbFaA6vfSzmGoAAB4Tvvf3s8683_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.5到第一个迎接太阳的国家看日出","url":"http://fdfs.xmcdn.com/group15/M04/DC/F9/wKgDaFaLJLKhDGG-ACCB6t2qXSo360.mp3","position":4},
+	{"duration":"00:04:06","img":"http://fdfs.xmcdn.com/group16/M08/D7/7A/wKgDbFaA6vfSzmGoAAB4Tvvf3s8683_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.4可爱又可恨的沙子","url":"http://fdfs.xmcdn.com/group12/M08/D9/5C/wKgDW1aDe4PC1k6eAB4neB8cpKs414.mp3","position":5},
+	{"duration":"00:03:55","img":"http://fdfs.xmcdn.com/group16/M04/ED/6F/wKgDbFago7rDjxEUAADU4u8WiN4944_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.7Elsa的冰山","url":"http://fdfs.xmcdn.com/group15/M0A/E7/57/wKgDaFacn1GSJx7CAByzOdKSAKA147.mp3","position":6},
+	{"duration":"00:05:41","img":"http://fdfs.xmcdn.com/group7/M03/D7/6B/wKgDWlZ-Y7HDlCx3AAC92RPHwGE340_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.3世界上独一无二的圣诞老人村","url":"http://fdfs.xmcdn.com/group15/M01/D5/90/wKgDaFZ-afWCEIVwACmwH7W53QI192.mp3","position":7},
+	{"duration":"00:04:01","img":"http://fdfs.xmcdn.com/group7/M03/D7/6B/wKgDWlZ-Y7HDlCx3AAC92RPHwGE340_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.2水从哪里来","url":"http://fdfs.xmcdn.com/group13/M09/D6/A2/wKgDXVZ-ZFLwttRhAB1sh8x6nzI056.mp3","position":8}],
+	"timers":[{"bgTime":"3:01","endTime":"4:00","weekDay":"3"}]
+},
+{
+	"id":"1467168329310","module":"one","musics":[{"duration":"00:04:05","img":"http://fdfs.xmcdn.com/group11/M02/C8/C3/wKgDa1Z-YqjzJiamAAC6Cs74SwM233_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.1冬天冷夏天热","url":"http://fdfs.xmcdn.com/group12/M0A/D6/39/wKgDXFZ-X6GhBAJWAB3pbd_La7M776.mp3","position":1},
+	{"duration":"00:04:09","img":"http://fdfs.xmcdn.com/group9/M05/EE/05/wKgDZlagoVOg7HOoAABr3_JBurM790_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.8到南极去找帝企鹅","url":"http://fdfs.xmcdn.com/group16/M08/ED/5E/wKgDbFaglByTtj0mAB556vXGAIA266.mp3","position":2},
+	{"duration":"00:03:50","img":"http://fdfs.xmcdn.com/group16/M08/D7/7A/wKgDbFaA6vfSzmGoAAB4Tvvf3s8683_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.6世界上最大的沙漠","url":"http://fdfs.xmcdn.com/group11/M03/EE/94/wKgDbVaUdmLTrXhsABwWfTtOuOE509.mp3","position":3},
+	{"duration":"00:04:26","img":"http://fdfs.xmcdn.com/group16/M08/D7/7A/wKgDbFaA6vfSzmGoAAB4Tvvf3s8683_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.5到第一个迎接太阳的国家看日出","url":"http://fdfs.xmcdn.com/group15/M04/DC/F9/wKgDaFaLJLKhDGG-ACCB6t2qXSo360.mp3","position":4},
+	{"duration":"00:04:06","img":"http://fdfs.xmcdn.com/group16/M08/D7/7A/wKgDbFaA6vfSzmGoAAB4Tvvf3s8683_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.4可爱又可恨的沙子","url":"http://fdfs.xmcdn.com/group12/M08/D9/5C/wKgDW1aDe4PC1k6eAB4neB8cpKs414.mp3","position":5},
+	{"duration":"00:03:55","img":"http://fdfs.xmcdn.com/group16/M04/ED/6F/wKgDbFago7rDjxEUAADU4u8WiN4944_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.7Elsa的冰山","url":"http://fdfs.xmcdn.com/group15/M0A/E7/57/wKgDaFacn1GSJx7CAByzOdKSAKA147.mp3","position":6},
+	{"duration":"00:05:41","img":"http://fdfs.xmcdn.com/group7/M03/D7/6B/wKgDWlZ-Y7HDlCx3AAC92RPHwGE340_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.3世界上独一无二的圣诞老人村","url":"http://fdfs.xmcdn.com/group15/M01/D5/90/wKgDaFZ-afWCEIVwACmwH7W53QI192.mp3","position":7},
+	{"duration":"00:04:01","img":"http://fdfs.xmcdn.com/group7/M03/D7/6B/wKgDWlZ-Y7HDlCx3AAC92RPHwGE340_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.2水从哪里来","url":"http://fdfs.xmcdn.com/group13/M09/D6/A2/wKgDXVZ-ZFLwttRhAB1sh8x6nzI056.mp3","position":8}],
+	"timers":[{"bgTime":"3:01","endTime":"4:00","weekDay":"4"}]
+},
+{
+	"id":"1467168329314","module":"one","musics":[{"duration":"00:04:05","img":"http://fdfs.xmcdn.com/group11/M02/C8/C3/wKgDa1Z-YqjzJiamAAC6Cs74SwM233_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.1冬天冷夏天热","url":"http://fdfs.xmcdn.com/group12/M0A/D6/39/wKgDXFZ-X6GhBAJWAB3pbd_La7M776.mp3","position":1},
+	{"duration":"00:04:09","img":"http://fdfs.xmcdn.com/group9/M05/EE/05/wKgDZlagoVOg7HOoAABr3_JBurM790_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.8到南极去找帝企鹅","url":"http://fdfs.xmcdn.com/group16/M08/ED/5E/wKgDbFaglByTtj0mAB556vXGAIA266.mp3","position":2},
+	{"duration":"00:03:50","img":"http://fdfs.xmcdn.com/group16/M08/D7/7A/wKgDbFaA6vfSzmGoAAB4Tvvf3s8683_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.6世界上最大的沙漠","url":"http://fdfs.xmcdn.com/group11/M03/EE/94/wKgDbVaUdmLTrXhsABwWfTtOuOE509.mp3","position":3},
+	{"duration":"00:04:26","img":"http://fdfs.xmcdn.com/group16/M08/D7/7A/wKgDbFaA6vfSzmGoAAB4Tvvf3s8683_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.5到第一个迎接太阳的国家看日出","url":"http://fdfs.xmcdn.com/group15/M04/DC/F9/wKgDaFaLJLKhDGG-ACCB6t2qXSo360.mp3","position":4},
+	{"duration":"00:04:06","img":"http://fdfs.xmcdn.com/group16/M08/D7/7A/wKgDbFaA6vfSzmGoAAB4Tvvf3s8683_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.4可爱又可恨的沙子","url":"http://fdfs.xmcdn.com/group12/M08/D9/5C/wKgDW1aDe4PC1k6eAB4neB8cpKs414.mp3","position":5},
+	{"duration":"00:03:55","img":"http://fdfs.xmcdn.com/group16/M04/ED/6F/wKgDbFago7rDjxEUAADU4u8WiN4944_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.7Elsa的冰山","url":"http://fdfs.xmcdn.com/group15/M0A/E7/57/wKgDaFacn1GSJx7CAByzOdKSAKA147.mp3","position":6},
+	{"duration":"00:05:41","img":"http://fdfs.xmcdn.com/group7/M03/D7/6B/wKgDWlZ-Y7HDlCx3AAC92RPHwGE340_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.3世界上独一无二的圣诞老人村","url":"http://fdfs.xmcdn.com/group15/M01/D5/90/wKgDaFZ-afWCEIVwACmwH7W53QI192.mp3","position":7},
+	{"duration":"00:04:01","img":"http://fdfs.xmcdn.com/group7/M03/D7/6B/wKgDWlZ-Y7HDlCx3AAC92RPHwGE340_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.2水从哪里来","url":"http://fdfs.xmcdn.com/group13/M09/D6/A2/wKgDXVZ-ZFLwttRhAB1sh8x6nzI056.mp3","position":8}],
+	"timers":[{"bgTime":"3:01","endTime":"4:00","weekDay":"5"}]
+},
+{
+	"id":"1467168329318","module":"one","musics":[{"duration":"00:04:05","img":"http://fdfs.xmcdn.com/group11/M02/C8/C3/wKgDa1Z-YqjzJiamAAC6Cs74SwM233_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.1冬天冷夏天热","url":"http://fdfs.xmcdn.com/group12/M0A/D6/39/wKgDXFZ-X6GhBAJWAB3pbd_La7M776.mp3","position":1},
+	{"duration":"00:04:09","img":"http://fdfs.xmcdn.com/group9/M05/EE/05/wKgDZlagoVOg7HOoAABr3_JBurM790_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.8到南极去找帝企鹅","url":"http://fdfs.xmcdn.com/group16/M08/ED/5E/wKgDbFaglByTtj0mAB556vXGAIA266.mp3","position":2},
+	{"duration":"00:03:50","img":"http://fdfs.xmcdn.com/group16/M08/D7/7A/wKgDbFaA6vfSzmGoAAB4Tvvf3s8683_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.6世界上最大的沙漠","url":"http://fdfs.xmcdn.com/group11/M03/EE/94/wKgDbVaUdmLTrXhsABwWfTtOuOE509.mp3","position":3},
+	{"duration":"00:04:26","img":"http://fdfs.xmcdn.com/group16/M08/D7/7A/wKgDbFaA6vfSzmGoAAB4Tvvf3s8683_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.5到第一个迎接太阳的国家看日出","url":"http://fdfs.xmcdn.com/group15/M04/DC/F9/wKgDaFaLJLKhDGG-ACCB6t2qXSo360.mp3","position":4},
+	{"duration":"00:04:06","img":"http://fdfs.xmcdn.com/group16/M08/D7/7A/wKgDbFaA6vfSzmGoAAB4Tvvf3s8683_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.4可爱又可恨的沙子","url":"http://fdfs.xmcdn.com/group12/M08/D9/5C/wKgDW1aDe4PC1k6eAB4neB8cpKs414.mp3","position":5},
+	{"duration":"00:03:55","img":"http://fdfs.xmcdn.com/group16/M04/ED/6F/wKgDbFago7rDjxEUAADU4u8WiN4944_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.7Elsa的冰山","url":"http://fdfs.xmcdn.com/group15/M0A/E7/57/wKgDaFacn1GSJx7CAByzOdKSAKA147.mp3","position":6},
+	{"duration":"00:05:41","img":"http://fdfs.xmcdn.com/group7/M03/D7/6B/wKgDWlZ-Y7HDlCx3AAC92RPHwGE340_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.3世界上独一无二的圣诞老人村","url":"http://fdfs.xmcdn.com/group15/M01/D5/90/wKgDaFZ-afWCEIVwACmwH7W53QI192.mp3","position":7},
+	{"duration":"00:04:01","img":"http://fdfs.xmcdn.com/group7/M03/D7/6B/wKgDWlZ-Y7HDlCx3AAC92RPHwGE340_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.2水从哪里来","url":"http://fdfs.xmcdn.com/group13/M09/D6/A2/wKgDXVZ-ZFLwttRhAB1sh8x6nzI056.mp3","position":8}],
+	"timers":[{"bgTime":"3:01","endTime":"4:00","weekDay":"6"}]
+},
+{
+	"id":"1467168329321","module":"one","musics":[{"duration":"00:04:05","img":"http://fdfs.xmcdn.com/group11/M02/C8/C3/wKgDa1Z-YqjzJiamAAC6Cs74SwM233_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.1冬天冷夏天热","url":"http://fdfs.xmcdn.com/group12/M0A/D6/39/wKgDXFZ-X6GhBAJWAB3pbd_La7M776.mp3","position":1},
+	{"duration":"00:04:09","img":"http://fdfs.xmcdn.com/group9/M05/EE/05/wKgDZlagoVOg7HOoAABr3_JBurM790_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.8到南极去找帝企鹅","url":"http://fdfs.xmcdn.com/group16/M08/ED/5E/wKgDbFaglByTtj0mAB556vXGAIA266.mp3","position":2},
+	{"duration":"00:03:50","img":"http://fdfs.xmcdn.com/group16/M08/D7/7A/wKgDbFaA6vfSzmGoAAB4Tvvf3s8683_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.6世界上最大的沙漠","url":"http://fdfs.xmcdn.com/group11/M03/EE/94/wKgDbVaUdmLTrXhsABwWfTtOuOE509.mp3","position":3},
+	{"duration":"00:04:26","img":"http://fdfs.xmcdn.com/group16/M08/D7/7A/wKgDbFaA6vfSzmGoAAB4Tvvf3s8683_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.5到第一个迎接太阳的国家看日出","url":"http://fdfs.xmcdn.com/group15/M04/DC/F9/wKgDaFaLJLKhDGG-ACCB6t2qXSo360.mp3","position":4},
+	{"duration":"00:04:06","img":"http://fdfs.xmcdn.com/group16/M08/D7/7A/wKgDbFaA6vfSzmGoAAB4Tvvf3s8683_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.4可爱又可恨的沙子","url":"http://fdfs.xmcdn.com/group12/M08/D9/5C/wKgDW1aDe4PC1k6eAB4neB8cpKs414.mp3","position":5},
+	{"duration":"00:03:55","img":"http://fdfs.xmcdn.com/group16/M04/ED/6F/wKgDbFago7rDjxEUAADU4u8WiN4944_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.7Elsa的冰山","url":"http://fdfs.xmcdn.com/group15/M0A/E7/57/wKgDaFacn1GSJx7CAByzOdKSAKA147.mp3","position":6},
+	{"duration":"00:05:41","img":"http://fdfs.xmcdn.com/group7/M03/D7/6B/wKgDWlZ-Y7HDlCx3AAC92RPHwGE340_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.3世界上独一无二的圣诞老人村","url":"http://fdfs.xmcdn.com/group15/M01/D5/90/wKgDaFZ-afWCEIVwACmwH7W53QI192.mp3","position":7},
+	{"duration":"00:04:01","img":"http://fdfs.xmcdn.com/group7/M03/D7/6B/wKgDWlZ-Y7HDlCx3AAC92RPHwGE340_mobile_large.jpg","name":"《甜甜圈和美啦啦的100个对话》NO.2水从哪里来","url":"http://fdfs.xmcdn.com/group13/M09/D6/A2/wKgDXVZ-ZFLwttRhAB1sh8x6nzI056.mp3","position":8}],
+	"timers":[{"bgTime":"3:01","endTime":"4:00","weekDay":"7"}]
+}
+],
+"id":"1467168329212"
+}
