@@ -123,7 +123,14 @@ CREATE TABLE `user_info` (
 
 
 ALTER TABLE `soundsystem`.`user_device_relation` 
-ADD COLUMN `birth_month` DATE NULL AFTER `binding_time`;
+ADD COLUMN `birth_month` VARCHAR(10) NULL AFTER `binding_time`;
+
 ALTER TABLE `soundsystem`.`course` 
 ADD COLUMN `icon` VARCHAR(200) NULL AFTER `times`;
+
+ALTER TABLE `soundsystem`.`course` 
+DROP COLUMN `age`,
+ADD COLUMN `age_max` INT(2) NULL COMMENT '适合的最大年龄' AFTER `collect`,
+ADD COLUMN `age_min` INT(2) NULL COMMENT '适合的最小年龄' AFTER `age_max`;
+
 
