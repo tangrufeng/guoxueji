@@ -24,7 +24,7 @@ import com.zhuyin.gxj.common.Common;
 public class SMSUtils {
     private static final Logger logger = Logger.getLogger(SMSUtils.class);
 
-    private final static String SMS_URL = "http://182.236.163.92:8084/WebAPI/SmsAPI.asmx/SendSms?user=" + Common.SMS_USERNAME + "&pwd=" + Common.SMS_PASSWORD + "&mobiles=#mobile#&contents=#content#";
+    private final static String SMS_URL = "http://182.236.163.92:8084/WebAPI/SmsAPI.asmx/SendSms?user=" + "" + "&pwd=" +"" + "&mobiles=#mobile#&contents=#content#";
 
     private final static String REG_STR = "<Code>([^</]+)</Code>";
 

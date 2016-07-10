@@ -1,5 +1,6 @@
 package com.zhuyin.gxj.service.impl;
 
+import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,8 +16,23 @@ public class CourseServiceImpl implements CourseService {
 	private CourseDAO courseDAO=null;
 	
 	@Override
-	public Map<String, String> getNewestList(Map<String, String> params) {
+	public List<Map<String, String>> getNewestList(Map<String, String> params) {
 		return courseDAO.getNewestList(params);
 	}
 
+
+	@Override
+	public List<Map<String, String>> getHotList(Map<String, String> params) {
+		return courseDAO.getHotList(params);
+	}
+
+	@Override
+	public List<Map<String, String>> getCataList() {
+		return courseDAO.getCataList();
+	}
+
+	@Override
+	public List<Map<String, String>> getCourseList(Map<String, String> params) {
+		return courseDAO.getCourseList(params);
+	}
 }

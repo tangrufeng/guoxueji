@@ -5,7 +5,7 @@ public class ResultBean {
 
 	int errCode=0;
 	
-	String errMsg="";
+	String errMsg="OK";
 	
 
 	public int getErrCode() {
