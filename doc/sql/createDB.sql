@@ -121,6 +121,15 @@ CREATE TABLE `user_info` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+CREATE TABLE `soundsystem`.`course_audio` (
+  `id` INT NOT NULL,
+  `audioId` INT(20) NULL,
+  `courseId` INT(20) NULL,
+  `sort` INT(3) NULL,
+  PRIMARY KEY (`id`)
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8
+COMMENT = '课程音频表';
+
 
 ALTER TABLE `soundsystem`.`user_device_relation` 
 ADD COLUMN `birth_month` VARCHAR(10) NULL AFTER `binding_time`;

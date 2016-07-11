@@ -22,7 +22,7 @@ public class UserSerivceImpl implements UserService {
     }
 
     @Override
-    public int isExist(String userToken) {
-        return userDAO.isExist(userToken);
+    public String getUserIdByToken(String userToken) {
+        return userDAO.getUserIdByToken(userToken);
     }
 }

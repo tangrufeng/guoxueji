@@ -13,4 +13,6 @@ public interface CourseService {
 	public List<Map<String,String>> getCataList();
 
 	public List<Map<String, String>> getCourseList(Map<String, String> params);
+
+    public List<Map<String, String>> search(Map<String, String> params);
 }

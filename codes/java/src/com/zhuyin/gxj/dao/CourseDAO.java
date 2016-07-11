@@ -1,5 +1,6 @@
 package com.zhuyin.gxj.dao;
 
+import java.net.URLDecoder;
 import java.util.List;
 import java.util.Map;
 
@@ -32,6 +33,9 @@ public interface CourseDAO {
     @SelectProvider(type = CourseSQL.class, method = "getCourseSQL")
     public List<Map<String, String>> getCourseList(Map<String, String> params);
 
+    @Options(useCache = true)
+    @SelectProvider(type = CourseSQL.class, method = "getSearchSQL")
+    public List<Map<String, String>> search(Map<String, String> params);
 
     public class CourseSQL {
         private final static Logger logger = Logger.getLogger(CourseSQL.class);
@@ -39,7 +43,8 @@ public interface CourseDAO {
         public String getSearchSQL(final Map<String, String> params){
             SQL sql = getSelectSQLResult();
             StringBuilder sb = new StringBuilder(sql.toString());
-
+            sb.append("name like '%"+params.get("key")+"%'");
+            appendPageSQL(params, sb);
             return sb.toString();
         }
 

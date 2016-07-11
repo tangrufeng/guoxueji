@@ -35,4 +35,10 @@ public class CourseServiceImpl implements CourseService {
 	public List<Map<String, String>> getCourseList(Map<String, String> params) {
 		return courseDAO.getCourseList(params);
 	}
+
+
+	@Override
+	public List<Map<String, String>> search(Map<String, String> params) {
+		return courseDAO.search(params);
+	}
 }

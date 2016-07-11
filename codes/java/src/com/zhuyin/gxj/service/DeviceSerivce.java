@@ -1,5 +1,6 @@
 package com.zhuyin.gxj.service;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -11,4 +12,6 @@ public interface DeviceSerivce {
     public int bandDevice(Map<String, String> params);
 
     public int isExist(String deviceSN);
+    
+    public List<Map<String,String>> getDeviceList(String userId);
 }

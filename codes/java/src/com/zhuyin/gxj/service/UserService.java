@@ -9,5 +9,5 @@ public interface UserService {
 
     public Map<String,String> getAgeFromBirthday(String userToken);
 
-    public int isExist(String userToken);
+    public String getUserIdByToken(String userToken);
 }

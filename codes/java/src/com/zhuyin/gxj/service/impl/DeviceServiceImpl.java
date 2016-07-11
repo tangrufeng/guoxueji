@@ -2,9 +2,11 @@ package com.zhuyin.gxj.service.impl;
 
 import com.zhuyin.gxj.dao.DeviceDAO;
 import com.zhuyin.gxj.service.DeviceSerivce;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -25,4 +27,9 @@ public class DeviceServiceImpl implements DeviceSerivce {
     public int isExist(String deviceSN) {
         return deviceDAO.isExist(deviceSN);
     }
+
+	@Override
+	public List<Map<String, String>> getDeviceList(String userId) {
+		return deviceDAO.getDeviceList(userId);
+	}
 }
