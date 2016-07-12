@@ -8,6 +8,8 @@ import java.util.Map;
  */
 public interface TaskService {
 
+
+
     public int addTask(Map<String,Object> params);
 
     public List<Map<String,Object>> getPlayTaskList(String userId, String deviceId);

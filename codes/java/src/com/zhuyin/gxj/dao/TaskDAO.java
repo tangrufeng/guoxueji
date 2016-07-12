@@ -5,6 +5,7 @@ import java.util.Map;
 
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Options;
+import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Component;
 
@@ -19,7 +20,7 @@ public interface TaskDAO {
 	public int addTaskAudio(Map<String,String> params);
 
 	@Select("select id,tag,weekday,begin from device_task where userId=#{userId} and deviceId=#{deviceId}")
-	public List<Map<String,String>> getPlayTaskList(String userId,String deviceId);
+	public List<Map<String,Object>> getPlayTaskList(@Param("userId") String userId, @Param("deviceId") String deviceId);
 
 
 	@Select("SELECT c.id,c.name,c.path as url,c.duration  FROM audio c,task_audio t where c.id=t.audio_id and t" +

@@ -43,14 +43,15 @@ public class TaskServiceImpl implements TaskService {
     @Override
     public List<Map<String, Object>> getPlayTaskList(String userId, String deviceId) {
 
-        List<Map<String,Object>> rlt=new ArrayList<>();
-        List<Map<String,String>> list=taskDAO.getPlayTaskList(userId,deviceId);
+        List<Map<String,Object>> list=taskDAO.getPlayTaskList(userId,deviceId);
 
-        for(Map<String,String> task:list){
+        for(Map<String,Object> task:list){
 
-//            String taskId=task.get("id");
-//            List<Map<String,String>> musics =taskDAO.getTaskAudio(taskId);
-//            task.put("musics",musics);
+            String taskId=String.valueOf(task.get("id"));
+            List<Map<String,String>> musics =taskDAO.getTaskAudio(taskId);
+            task.put("musics",musics);
         }
+
+        return list;
     }
 }
