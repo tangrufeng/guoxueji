@@ -8,11 +8,11 @@
         function addOrder(){
 //var postData = "{\"a\":\"aaa\",\"openId\":\"xxxxxxxx\", \"buy\":\"USD\", \"sell\":\"CNY\", \"takeDate\":\"2016-06-06\", \"cityId\":\"1\", \"areaId\":\"2\", \"sum\":\"33\", \"changer\":\"张三\", \"idType\":\"11\", \"idNo\":\"DD\", \"referenceID\":\"111\", \"moblieNo\":\"13700000000\", \"storeId\":\"1\", \"rate\":\"111\", \"status\":\"1\"}";
 //var postData="{\"name\":\"name1\"}"
-            var postData="{\"fullname\": \"fengliang\", \"name\": \"fl\", \"account\": \"fll\", \"password\": \"123\"}";
+            var postData="{\"userId\": \"1\", \"deviceId\": \"11111\", \"tag\": \"fll\", \"weekDay\": \"123\"}";
             console.log(postData);
             var xhr = new XMLHttpRequest();
 
-            xhr.open("POST", "mp/addSuppler.do", true);
+            xhr.open("POST", "user/addPlayTask", true);
             xhr.setRequestHeader("Content-type","application/json; charset=utf-8");
             xhr.onreadystatechange = function(){
                 var XMLHttpReq = xhr;
