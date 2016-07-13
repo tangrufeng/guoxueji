@@ -2,8 +2,11 @@ package com.zhuyin.gxj.controller;
 
 import com.zhuyin.gxj.common.Common;
 import com.zhuyin.gxj.entity.ResultBean;
+import com.zhuyin.gxj.service.UserService;
 import com.zhuyin.gxj.utils.SMSUtils;
 import com.zhuyin.gxj.utils.ValiCodeCache;
+
+import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,8 +25,11 @@ public class ValiMobileController extends BaseController {
 
     @Autowired
     SMSUtils smsUtils;
+    
+    @Autowired
+    UserService userService;
 
-    @RequestMapping("/app/sendValiCode")
+    @RequestMapping("app/sendValiCode")
     @ResponseBody
     public ResultBean sendValiCode(@RequestParam String mobileNo) {
         ResultBean rst = new ResultBean();
@@ -43,9 +49,16 @@ public class ValiMobileController extends BaseController {
     @ResponseBody
     public ResultBean sendValiCode(@RequestParam String mobileNo, @RequestParam String valiCode) {
         ResultBean rst = new ResultBean();
-        int i = cache.valiCode(mobileNo, valiCode);
+//        int i = cache.valiCode(mobileNo, valiCode);
+        int i=0;
         switch (i) {
             case 0:
+            	String userToken=userService.getUserTokenByMobile(mobileNo);
+            	if(StringUtils.isEmpty(userToken)){
+            		userService.saveUser(mobileNo);
+            		userToken=userService.getUserTokenByMobile(mobileNo);
+            	}
+            	rst.setUserToken(userToken);
                 rst.setErrCode(0);
                 rst.setErrMsg("手机验证成功");
                 break;

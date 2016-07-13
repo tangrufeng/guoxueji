@@ -10,4 +10,8 @@ public interface UserService {
     public Map<String,String> getAgeFromBirthday(String userToken);
 
     public String getUserIdByToken(String userToken);
+
+    public String getUserTokenByMobile(String mobile);
+    
+    public int saveUser(String mobileNO);
 }

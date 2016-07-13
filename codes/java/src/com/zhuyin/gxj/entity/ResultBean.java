@@ -7,6 +7,16 @@ public class ResultBean {
 	
 	String errMsg="OK";
 	
+	private String userToken="";
+
+	
+	public String getUserToken() {
+		return userToken;
+	}
+
+	public void setUserToken(String userToken) {
+		this.userToken = userToken;
+	}
 
 	public int getErrCode() {
 		return errCode;
@@ -26,7 +36,8 @@ public class ResultBean {
 
 	@Override
 	public String toString() {
-		return "ResultBean [errCode=" + errCode + ", errMsg=" + errMsg + "]";
+		return "ResultBean [errCode=" + errCode + ", errMsg=" + errMsg
+				+ ", userToken=" + userToken + "]";
 	}
 
 	

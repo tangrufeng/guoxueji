@@ -2,6 +2,7 @@ package com.zhuyin.gxj.service.impl;
 
 import com.zhuyin.gxj.dao.UserDAO;
 import com.zhuyin.gxj.service.UserService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -25,4 +26,16 @@ public class UserSerivceImpl implements UserService {
     public String getUserIdByToken(String userToken) {
         return userDAO.getUserIdByToken(userToken);
     }
+
+	@Override
+	public String getUserTokenByMobile(String mobile) {
+		return userDAO.getUserTokenByMobile(mobile);
+	}
+
+	@Override
+	public int saveUser(String mobileNO) {
+		return userDAO.saveUser(mobileNO);
+	}
+    
+    
 }

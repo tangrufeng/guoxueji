@@ -29,7 +29,7 @@ public class TaskServiceImpl implements TaskService {
         logger.debug("before====>" + params);
         int i = taskDAO.addTask(params);
         if (i == 1) {
-            long taskId = (long) params.get("id");
+            long taskId = (Long) params.get("id");
             ArrayList<Map<String, String>> musics = (ArrayList<Map<String, String>>) params.get("musics");
             for (Map<String, String> music : musics) {
                 music.put("task_id", taskId + "");

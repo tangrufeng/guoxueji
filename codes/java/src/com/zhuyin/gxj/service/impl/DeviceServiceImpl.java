@@ -32,4 +32,16 @@ public class DeviceServiceImpl implements DeviceSerivce {
 	public List<Map<String, String>> getDeviceList(String userId) {
 		return deviceDAO.getDeviceList(userId);
 	}
+
+	@Override
+	public String getDeviceIdBySN(String sn) {
+		return deviceDAO.getDeviceIdBySN(sn);
+	}
+
+	@Override
+	public String hasBand(String userId, String deviceId) {
+		return deviceDAO.hasBand(userId, deviceId);
+	}
+
+	
 }

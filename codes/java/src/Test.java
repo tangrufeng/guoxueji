@@ -12,14 +12,33 @@ import org.springframework.http.HttpStatus;
  */
 public class Test {
 
+	
+	public static String baseUrl="http://localhost:8080/GXJ_APP_INTF";
+	
+	public static void testAddPlayTask(){
+		String url=baseUrl+"/user/addPlayTask";
+        String content = "{\"userToken\": \"6D07D2ED48CA11E69FC2F81654C0D75C\", \"deviceId\": \"11111\", \"tag\": \"fll\", " +
+    	        "\"weekDay\": \"1,2,3\",\"begin\":\"10:00:00\",\"musics\":[{\"audio_id\":\"1\"},{\"audio_id\":\"2\"}," +
+    	        "{\"audio_id\":\"3\"},{\"audio_id\":\"4\"},{\"audio_id\":\"5\"}]}";
+        sendPost(url, content);
+	}
+
+	public static void testAddDevice(){
+		String url=baseUrl+"/user/addDevice";
+        String content = "{\"userToken\":\"6D07D2ED48CA11E69FC2F81654C0D75C\",\"sn\":\"111111\",\"name\":\"xxxxx\",\"cityId\":\"12\",\"birthDay\":\"1985-10-17\"}";
+        sendPost(url, content);
+	}
+	
     public static void main(String[] args) {
-        HttpClient client = HttpClients.createDefault();
-        String URL1="http://localhost:8080/user/addPlayTask";
+//        testAddPlayTask();
+    	testAddDevice();
+    }
+    
+	private static void sendPost(String URL1, String content) {
+		HttpClient client = HttpClients.createDefault();
 
         HttpPost post=new HttpPost(URL1);
-        StringEntity entity=new StringEntity("{\"userId\": \"1\", \"deviceId\": \"11111\", \"tag\": \"fll\", " +
-                "\"weekDay\": \"123\",\"begin\":\"10:00:00\",\"musics\":[{\"audio_id\":\"1\"},{\"audio_id\":\"2\"}," +
-                "{\"audio_id\":\"3\"},{\"audio_id\":\"4\"},{\"audio_id\":\"5\"}]}","utf-8");
+        StringEntity entity=new StringEntity(content,"utf-8");
         entity.setContentType("application/json");
         post.setEntity(entity);
         try {
@@ -37,5 +56,5 @@ public class Test {
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
+	}
 }

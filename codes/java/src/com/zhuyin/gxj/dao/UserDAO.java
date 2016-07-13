@@ -1,5 +1,6 @@
 package com.zhuyin.gxj.dao;
 
+import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Component;
 
@@ -17,6 +18,12 @@ public interface UserDAO {
             " where userId=#{userId}) AS a")
     public Map<String, String> getAgeFromBirthday(String userId);
 
-    @Select("select id from user_info where token=#{token}")
+    @Select("select id from user_info where token=#{token} and status=0")
     public String getUserIdByToken(String token);
+    
+    @Select("select token from user_info where telephone=#{mobile} and status=0")
+    public String getUserTokenByMobile(String mobile);
+    
+    @Insert("insert user_info(`telephone`,`create_time`,`token`) values(#{mobileNO},DATE_FORMAT(now(),'%Y-%m-%d %H:%i:%s'),upper(replace(uuid(),'-','')))")
+    public int saveUser(String mobileNO);
 }

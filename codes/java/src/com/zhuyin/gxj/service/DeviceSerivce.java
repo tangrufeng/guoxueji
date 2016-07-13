@@ -13,5 +13,9 @@ public interface DeviceSerivce {
 
     public int isExist(String deviceSN);
     
+    public String getDeviceIdBySN(String sn);
+    
     public List<Map<String,String>> getDeviceList(String userId);
+    
+    public String hasBand(String userId,String deviceId);
 }

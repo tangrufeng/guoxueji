@@ -41,26 +41,36 @@ public class DeviceController {
 			return rb;
 		}
 
-		// String userToken=map.get("userToken");
-		// if(userService.isExist(userToken)<=0){
-		// rb.setErrCode(Common.ERRCODE_NEEDLOGIN);
-		// rb.setErrMsg(Common.ERRMSG_NEEDLOGIN);
-		// return rb;
-		// }
-		//
-		// String deviceSN=map.get("sn");
-		// if(deviceSerivce.isExist(deviceSN)<=0){
-		// rb.setErrCode(Common.ERRCODE_COMMON);
-		// rb.setErrMsg("没有找到对应的音响设备信息");
-		// return rb;
-		// }
+		String userToken = map.get("userToken");
+		String userId = userService.getUserIdByToken(userToken);
+		if (StringUtils.isEmpty(userId)) {
+			rb.setErrCode(Common.ERRCODE_NEEDLOGIN);
+			rb.setErrMsg(Common.ERRMSG_NEEDLOGIN);
+			return rb;
+		} else {
+			map.put("userId", userId);
+		}
 
-		int i = deviceSerivce.bandDevice(map);
+		String deviceSN = map.get("sn");
+		String deviceId = deviceSerivce.getDeviceIdBySN(deviceSN);
+		if (StringUtils.isEmpty(deviceId)) {
+			rb.setErrCode(Common.ERRCODE_COMMON);
+			rb.setErrMsg("没有找到对应的音响设备信息");
+			return rb;
+		} else {
+			map.put("deviceId", deviceId);
+		}
+
+		if (StringUtils.isEmpty(deviceSerivce.hasBand(userId, deviceId))) {
+			deviceSerivce.bandDevice(map);
+		} else {
+			rb.setErrCode(-2);
+			rb.setErrMsg("你已绑定过该设备,无需再次绑定");
+		}
 
 		return rb;
 	}
 
-	
 	@RequestMapping("/user/getMyDevices")
 	@ResponseBody
 	public ResultListBean getMyDevices(

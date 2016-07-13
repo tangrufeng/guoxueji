@@ -199,7 +199,7 @@ CREATE TABLE `course_catalog` (
   `logo_path` varchar(255) DEFAULT NULL,
   `status` smallint(6) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -208,6 +208,7 @@ CREATE TABLE `course_catalog` (
 
 LOCK TABLES `course_catalog` WRITE;
 /*!40000 ALTER TABLE `course_catalog` DISABLE KEYS */;
+INSERT INTO `course_catalog` VALUES (1,'[1,2,3]','111',1);
 /*!40000 ALTER TABLE `course_catalog` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -225,7 +226,7 @@ CREATE TABLE `device` (
   `laster_update_timme` datetime DEFAULT NULL,
   `status` smallint(6) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -234,6 +235,7 @@ CREATE TABLE `device` (
 
 LOCK TABLES `device` WRITE;
 /*!40000 ALTER TABLE `device` DISABLE KEYS */;
+INSERT INTO `device` VALUES (1,'111111',NULL,NULL,0);
 /*!40000 ALTER TABLE `device` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -246,15 +248,16 @@ DROP TABLE IF EXISTS `device_task`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `device_task` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `tag` varchar(45) DEFAULT NULL,
-  `deviceId` int(8) DEFAULT NULL,
-  `begin` time DEFAULT NULL COMMENT '开始播放时间',
-  `userId` int(8) DEFAULT NULL,
+  `tag` varchar(45) NOT NULL,
+  `deviceId` int(8) NOT NULL,
+  `begin` time NOT NULL COMMENT '开始播放时间',
+  `userId` int(8) NOT NULL,
   `createtime` datetime DEFAULT NULL,
   `updatetime` datetime DEFAULT NULL,
+  `weekDay` varchar(45) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id_UNIQUE` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='设备定时播放任务表';
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COMMENT='设备定时播放任务表';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -263,6 +266,7 @@ CREATE TABLE `device_task` (
 
 LOCK TABLES `device_task` WRITE;
 /*!40000 ALTER TABLE `device_task` DISABLE KEYS */;
+INSERT INTO `device_task` VALUES (4,'fll',11111,'10:00:00',2,'2016-07-13 15:58:51','2016-07-13 15:58:51',''),(5,'fll',11111,'10:00:00',2,'2016-07-13 16:08:41','2016-07-13 16:08:41',''),(6,'fll',11111,'10:00:00',2,'2016-07-13 16:22:55','2016-07-13 16:22:55','1,2,3');
 /*!40000 ALTER TABLE `device_task` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -326,11 +330,11 @@ DROP TABLE IF EXISTS `task_audio`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `task_audio` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `task_id` int(11) NOT NULL,
   `audio_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='定时任务中的音乐列表';
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 COMMENT='定时任务中的音乐列表';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -339,6 +343,7 @@ CREATE TABLE `task_audio` (
 
 LOCK TABLES `task_audio` WRITE;
 /*!40000 ALTER TABLE `task_audio` DISABLE KEYS */;
+INSERT INTO `task_audio` VALUES (1,4,1),(2,4,2),(3,4,3),(4,4,4),(5,4,5),(6,5,1),(7,5,2),(8,5,3),(9,5,4),(10,5,5),(11,6,1),(12,6,2),(13,6,3),(14,6,4),(15,6,5);
 /*!40000 ALTER TABLE `task_audio` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -429,15 +434,18 @@ DROP TABLE IF EXISTS `user_device_relation`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `user_device_relation` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `userId` int(20) NOT NULL,
   `deviceId` int(20) NOT NULL,
-  `status` smallint(6) NOT NULL,
+  `status` smallint(6) NOT NULL DEFAULT '0',
   `binding_time` datetime DEFAULT NULL,
   `birth_month` varchar(10) DEFAULT NULL,
   `name` varchar(45) DEFAULT NULL,
   `city` int(8) DEFAULT NULL,
-  UNIQUE KEY `sound_userId_deviceId` (`userId`,`deviceId`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `sound_userId_deviceId` (`userId`,`deviceId`) USING BTREE,
+  UNIQUE KEY `id_UNIQUE` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -446,8 +454,64 @@ CREATE TABLE `user_device_relation` (
 
 LOCK TABLES `user_device_relation` WRITE;
 /*!40000 ALTER TABLE `user_device_relation` DISABLE KEYS */;
-INSERT INTO `user_device_relation` VALUES (1,1,1,'2016-07-08 16:26:00','2012-03',NULL,NULL),(1,2,1,'2016-07-08 16:26:16','2012-03',NULL,NULL),(1,3,1,'2016-07-08 16:27:24','2013-03',NULL,NULL);
+INSERT INTO `user_device_relation` VALUES (1,1,1,1,'2016-07-08 16:26:00','2012-03',NULL,NULL),(2,1,2,1,'2016-07-08 16:26:16','2012-03',NULL,NULL),(3,1,3,1,'2016-07-08 16:27:24','2013-03',NULL,NULL),(4,2,1,0,'2016-07-13 17:16:11','198510-17','xxxxx',12);
 /*!40000 ALTER TABLE `user_device_relation` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `user_favorite_audio`
+--
+
+DROP TABLE IF EXISTS `user_favorite_audio`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `user_favorite_audio` (
+  `id` int(11) NOT NULL,
+  `userId` int(11) NOT NULL,
+  `catalogId` int(11) NOT NULL,
+  `audioId` int(11) NOT NULL,
+  `status` int(11) NOT NULL DEFAULT '0' COMMENT '0--收藏 1--取消',
+  `createtime` datetime NOT NULL,
+  `updatetime` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `index2` (`userId`,`catalogId`,`audioId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用户收藏音频表';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `user_favorite_audio`
+--
+
+LOCK TABLES `user_favorite_audio` WRITE;
+/*!40000 ALTER TABLE `user_favorite_audio` DISABLE KEYS */;
+/*!40000 ALTER TABLE `user_favorite_audio` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `user_favorite_catalog`
+--
+
+DROP TABLE IF EXISTS `user_favorite_catalog`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `user_favorite_catalog` (
+  `id` int(11) NOT NULL,
+  `userId` int(11) NOT NULL,
+  `name` varchar(45) NOT NULL,
+  `status` int(11) NOT NULL DEFAULT '0' COMMENT '0--收藏 1--取消',
+  `createtime` datetime NOT NULL,
+  `updatetime` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用户收藏目录';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `user_favorite_catalog`
+--
+
+LOCK TABLES `user_favorite_catalog` WRITE;
+/*!40000 ALTER TABLE `user_favorite_catalog` DISABLE KEYS */;
+/*!40000 ALTER TABLE `user_favorite_catalog` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -459,11 +523,14 @@ DROP TABLE IF EXISTS `user_info`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `user_info` (
   `id` int(20) NOT NULL AUTO_INCREMENT,
-  `telephone` varchar(50) DEFAULT NULL,
-  `status` smallint(6) NOT NULL DEFAULT '0',
+  `telephone` varchar(50) NOT NULL,
+  `status` smallint(6) NOT NULL DEFAULT '0' COMMENT '0--keyong 1--bukeyong',
   `create_time` datetime NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `token` varchar(32) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `telephone_UNIQUE` (`telephone`),
+  UNIQUE KEY `token_UNIQUE` (`token`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -472,6 +539,7 @@ CREATE TABLE `user_info` (
 
 LOCK TABLES `user_info` WRITE;
 /*!40000 ALTER TABLE `user_info` DISABLE KEYS */;
+INSERT INTO `user_info` VALUES (1,'1111111',0,'2016-07-13 11:17:20','48AF6ABD48A811E69FC2F81654C0D75C'),(2,'18688888888',0,'2016-07-13 15:21:44','6D07D2ED48CA11E69FC2F81654C0D75C');
 /*!40000 ALTER TABLE `user_info` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -484,4 +552,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-07-11 18:12:13
+-- Dump completed on 2016-07-13 18:05:48
