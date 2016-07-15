@@ -43,5 +43,10 @@ public class DeviceServiceImpl implements DeviceSerivce {
 		return deviceDAO.hasBand(userId, deviceId);
 	}
 
+	@Override
+	public int delDevice(String userId, String deviceId) {
+		return deviceDAO.delDevice(userId, deviceId);
+	}
+
 	
 }

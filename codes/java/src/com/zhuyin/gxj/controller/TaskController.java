@@ -56,4 +56,6 @@ public class TaskController {
         rlb.setCnt(list.size());
         return rlb;
     }
+    
+    public ResultBean del
 }

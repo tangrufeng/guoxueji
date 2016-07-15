@@ -3,6 +3,7 @@ package com.zhuyin.gxj.dao;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -16,7 +17,7 @@ public interface DeviceDAO {
 
     @Insert("INSERT INTO `user_device_relation` (`userId`, `deviceId`, `binding_time`, `birth_month`, " +
             "`name`,`city`) VALUES (#{userId}, #{deviceId}, DATE_FORMAT(now(),'%Y-%m-%d %H:%i:%s'), #{birthDay}, " +
-            "#{name},#{cityId});")
+            "#{name},#{cityId}) on DUPLICATE KEY UPDATE status = 0,birth_month=#{birthDay},city=#{cityId},name=#{name},updatetime=DATE_FORMAT(now(),'%Y-%m-%d %H:%i:%s');")
     public int bandDevice(Map<String, String> params);
 
     @Select("select count(1) from device where device_number= #{deviceSN}")
@@ -31,4 +32,8 @@ public interface DeviceDAO {
 
     @Select("select 1 from user_device_relation where userId=#{userId} and deviceId=#{deviceId} limit 1")
 	public String hasBand(@Param("userId") String userId,@Param("deviceId") String deviceId);
+    
+
+    @Update("update user_device_relation set status=1, updatetime=DATE_FORMAT(now(),'%Y-%m-%d %H:%i:%s') where userId=#{userId} and deviceId=#{deviceId}")
+    public int delDevice(@Param("userId") String userId,@Param("deviceId") String deviceId);
 }

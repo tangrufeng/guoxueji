@@ -2,6 +2,7 @@ package com.zhuyin.gxj.service.impl;
 
 import com.zhuyin.gxj.dao.TaskDAO;
 import com.zhuyin.gxj.service.TaskService;
+
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -54,4 +55,16 @@ public class TaskServiceImpl implements TaskService {
 
         return list;
     }
+
+	@Override
+	public int deleteTask(String userId, String taskId) {
+		return taskDAO.deleteTask(userId, taskId);
+	}
+
+	@Override
+	public int deleteTaskAudio(String taskId, String audioId) {
+		return taskDAO.deleteTaskAudio(taskId, audioId);
+	}
+    
+    
 }

@@ -61,12 +61,12 @@ public class DeviceController {
 			map.put("deviceId", deviceId);
 		}
 
-		if (StringUtils.isEmpty(deviceSerivce.hasBand(userId, deviceId))) {
-			deviceSerivce.bandDevice(map);
-		} else {
-			rb.setErrCode(-2);
-			rb.setErrMsg("你已绑定过该设备,无需再次绑定");
-		}
+		// if (StringUtils.isEmpty(deviceSerivce.hasBand(userId, deviceId))) {
+		deviceSerivce.bandDevice(map);
+		// } else {
+		// rb.setErrCode(-2);
+		// rb.setErrMsg("你已绑定过该设备,无需再次绑定");
+		// }
 
 		return rb;
 	}
@@ -89,5 +89,27 @@ public class DeviceController {
 		rlb.setErrCode(Common.ERRCODE_NEEDLOGIN);
 		rlb.setErrMsg(Common.ERRMSG_NEEDLOGIN);
 		return rlb;
+	}
+	
+	@RequestMapping("/user/delDevice")
+	@ResponseBody
+	public ResultBean delDevices(@RequestBody Map<String,String> map){
+
+		ResultBean rb = new ResultBean();
+		if (!map.containsKey("userToken") || !map.containsKey("deviceId")) {
+			rb.setErrCode(Common.ERRCODE_COMMON);
+			rb.setErrMsg("参数不全");
+			return rb;
+		}
+
+		String userToken = map.get("userToken");
+		String userId = userService.getUserIdByToken(userToken);
+		if (StringUtils.isEmpty(userId)) {
+			rb.setErrCode(Common.ERRCODE_NEEDLOGIN);
+			rb.setErrMsg(Common.ERRMSG_NEEDLOGIN);
+			return rb;
+		}
+		deviceSerivce.delDevice(userId, map.get("deviceId"));
+		return rb;
 	}
 }
