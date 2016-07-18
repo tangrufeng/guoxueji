@@ -213,6 +213,37 @@ INSERT INTO `course_catalog` VALUES (1,'[1,2,3]','111',1);
 UNLOCK TABLES;
 
 --
+-- Table structure for table `decive_action`
+--
+
+DROP TABLE IF EXISTS `decive_action`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `decive_action` (
+  `id` varchar(45) NOT NULL,
+  `deviceId` int(11) DEFAULT NULL,
+  `action` varchar(45) DEFAULT NULL,
+  `taskId` varchar(45) DEFAULT NULL,
+  `status` int(1) DEFAULT NULL COMMENT '0--初始；1--已读取 2--已执行',
+  `params` varchar(1000) DEFAULT NULL,
+  `beginTime` datetime DEFAULT NULL,
+  `createTime` datetime DEFAULT NULL,
+  `updateTime` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id_UNIQUE` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `decive_action`
+--
+
+LOCK TABLES `decive_action` WRITE;
+/*!40000 ALTER TABLE `decive_action` DISABLE KEYS */;
+/*!40000 ALTER TABLE `decive_action` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `device`
 --
 
@@ -558,4 +589,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-07-15 17:57:24
+-- Dump completed on 2016-07-18 18:03:38

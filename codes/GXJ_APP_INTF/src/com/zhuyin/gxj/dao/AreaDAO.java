@@ -1,15 +1,13 @@
 package com.zhuyin.gxj.dao;
 
-import org.apache.ibatis.annotations.Result;
-import org.apache.ibatis.annotations.Results;
 import org.apache.ibatis.annotations.Select;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Map;
 
 
-@Component("areaDAO")
+@Repository("areaDAO")
 public interface AreaDAO {
 
 

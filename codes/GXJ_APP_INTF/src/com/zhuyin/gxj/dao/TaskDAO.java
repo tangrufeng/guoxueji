@@ -9,8 +9,9 @@ import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
-@Component("taskDAO")
+@Repository("taskDAO")
 public interface TaskDAO {
 
 	@Insert("insert into device_task (`tag`,`deviceId`,`weekday`,`begin`,`userId`,`createtime`,`updatetime`) values (#{tag},#{deviceId},#{weekDay},#{begin},#{userId},DATE_FORMAT(now(),'%Y-%m-%d %H:%i:%s'),DATE_FORMAT(now(),'%Y-%m-%d %H:%i:%s'))")

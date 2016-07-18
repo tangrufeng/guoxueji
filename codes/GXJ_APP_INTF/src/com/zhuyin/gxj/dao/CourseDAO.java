@@ -1,6 +1,5 @@
 package com.zhuyin.gxj.dao;
 
-import java.net.URLDecoder;
 import java.util.List;
 import java.util.Map;
 
@@ -9,9 +8,9 @@ import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.SelectProvider;
 import org.apache.ibatis.jdbc.SQL;
 import org.apache.log4j.Logger;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
-@Component("courseDAO")
+@Repository("courseDAO")
 public interface CourseDAO {
 
 
