@@ -57,5 +57,46 @@ public class TaskController {
         return rlb;
     }
     
-    public ResultBean del
+    @RequestMapping("/user/delTask")
+    @ResponseBody
+    public ResultBean delTask(@RequestBody Map<String,Object> params){
+        ResultBean rb=new ResultBean();
+        String userToken=String.valueOf(params.get("userToken"));
+        String userId=userService.getUserIdByToken(userToken);
+        if(StringUtils.isNotEmpty(userId)){
+        	params.put("userId", userId);
+            taskService.deleteTask(userId, String.valueOf(params.get("taskId")));
+        }else{
+        	rb.setErrCode(Common.ERRCODE_NEEDLOGIN);
+        	rb.setErrMsg(Common.ERRMSG_NEEDLOGIN);
+        }
+        
+        return rb;
+    }
+    
+
+    @RequestMapping("/user/delTaskAudio")
+    @ResponseBody
+    public ResultBean delTaskAudio(@RequestBody Map<String,Object> map){
+    	ResultBean rb = new ResultBean();
+		if (!map.containsKey("userToken") || !map.containsKey("taskId")|| !map.containsKey("music")) {
+			rb.setErrCode(Common.ERRCODE_COMMON);
+			rb.setErrMsg("参数不全");
+			return rb;
+		}
+		String userToken = String.valueOf(map.get("userToken"));
+		String userId = userService.getUserIdByToken(userToken);
+		if (StringUtils.isEmpty(userId)) {
+			rb.setErrCode(Common.ERRCODE_NEEDLOGIN);
+			rb.setErrMsg(Common.ERRMSG_NEEDLOGIN);
+			return rb;
+		}
+		String taskId=String.valueOf(map.get("taskId"));
+		List<Map<String,String>> musics=(List<Map<String, String>>) map.get("music");
+		for(Map<String,String> m:musics){
+			String id=m.get("id");
+			taskService.deleteTaskAudio(taskId, id);
+		}
+		return rb;
+    }
 }
