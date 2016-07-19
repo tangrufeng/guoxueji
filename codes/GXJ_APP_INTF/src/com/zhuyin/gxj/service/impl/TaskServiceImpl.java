@@ -36,6 +36,8 @@ public class TaskServiceImpl implements TaskService {
                 music.put("task_id", taskId + "");
                 taskDAO.addTaskAudio(music);
             }
+            
+            
         }
         logger.debug("after=====>" + params);
         return 0;

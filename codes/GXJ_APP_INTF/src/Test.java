@@ -28,6 +28,11 @@ public class Test {
 		sendPost(url, content);
 	}
 
+	public static void testControlDevice() {
+		String url = baseUrl + "/user/controlDevice";
+		String content = "{\"userToken\":\"6D07D2ED48CA11E69FC2F81654C0D75C\",\"deviceId\":\"111111\",\"action\":\"player\",\"cityId\":\"13\",\"birthDay\":\"1985-11-18\"}";
+		sendPost(url, content);
+	}
 //	public static void testBandDevice(){
 //		String url = baseUrl + "/user/addDevice";
 //		String content = "{\"userToken\":\"6D07D2ED48CA11E69FC2F81654C0D75C\",\"sn\":\"111111\",\"name\":\"xxxxx\",\"cityId\":\"12\",\"birthDay\":\"1985-10-17\"}";

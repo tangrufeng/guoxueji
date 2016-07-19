@@ -31,6 +31,10 @@ public interface DeviceDAO {
     @Select("select id from device where device_number= #{deviceSN}")
 	public String getDeviceIdBySN(String sn);
 
+
+    @Select("select device_number from device where id= #{deviceId}")
+    public String getDeviceSNById(String deviceId);
+    
     @Select("select 1 from user_device_relation where userId=#{userId} and deviceId=#{deviceId} limit 1")
 	public String hasBand(@Param("userId") String userId,@Param("deviceId") String deviceId);
     
