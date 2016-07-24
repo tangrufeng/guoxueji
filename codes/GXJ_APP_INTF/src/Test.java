@@ -12,12 +12,12 @@ import org.springframework.http.HttpStatus;
  */
 public class Test {
 
-	public static String baseUrl = "http://localhost:8080/GXJ_APP_INTF";
+	public static String baseUrl = "http://localhost:8080/appintf";
 
 	public static void testAddPlayTask() {
 		String url = baseUrl + "/user/addPlayTask";
-		String content = "{\"userToken\": \"6D07D2ED48CA11E69FC2F81654C0D75C\", \"deviceId\": \"11111\", \"tag\": \"fll\", "
-				+ "\"weekDay\": \"1,2,3\",\"begin\":\"10:00:00\",\"musics\":[{\"audio_id\":\"1\"},{\"audio_id\":\"2\"},"
+		String content = "{\"userToken\": \"6D07D2ED48CA11E69FC2F81654C0D75C\", \"deviceId\": \"2\", \"tag\": \"fll\", "
+				+ "\"weekDay\": \"123\",\"begin\":\"10:00:00\",\"musics\":[{\"audio_id\":\"1\"},{\"audio_id\":\"2\"},"
 				+ "{\"audio_id\":\"3\"},{\"audio_id\":\"4\"},{\"audio_id\":\"5\"}]}";
 		sendPost(url, content);
 	}
@@ -65,9 +65,9 @@ public class Test {
 	}
 	
 	public static void main(String[] args) {
-		// testAddPlayTask();
-		 testAddDevice();
-		// testAddCollectDir();
+		 testAddPlayTask();
+//		 testAddDevice();
+//		 testAddCollectDir();
 //		testAddCollectAudio();
 //		testDelCollect() ;
 //		testDelCollectAudio() ;

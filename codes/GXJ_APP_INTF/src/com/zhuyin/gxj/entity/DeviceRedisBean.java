@@ -1,87 +1,165 @@
 package com.zhuyin.gxj.entity;
 
+import com.sun.istack.internal.NotNull;
+
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 public class DeviceRedisBean implements Serializable{
 
-	private String deviceId;
-	
-	private String action;
-	
-	private int status;
-	
-	private String actionId;
-	
-	
+    private final static long serialVersionUID = -1466826803517713019l;
+
+
+	private String deviceId ="";
+
+	@NotNull
+	private String deviceSN="";
+
+
+	private long sdSize=0l;
+
+	private long sdUsed=0l;
+
+	private int state=-1;
+
+	private String ip="";
+
+	private String gw="";
+
+	private String dns="";
+
+	private String mac="";
+
+	private String version="";
+
+	private int pingInterval=10000;
+
+	private List<ActionBean> actions=new ArrayList<>();
+
+	public List<ActionBean> getActions() {
+		return actions;
+	}
+
+	public void setActions(List<ActionBean> actions) {
+		this.actions = actions;
+	}
+
+	private long lastPingTime=0l;
+
 	public String getDeviceId() {
 		return deviceId;
 	}
-
 
 	public void setDeviceId(String deviceId) {
 		this.deviceId = deviceId;
 	}
 
-
-	public String getAction() {
-		return action;
+	public long getSdSize() {
+		return sdSize;
 	}
 
-
-	public void setAction(String action) {
-		this.action = action;
+	public void setSdSize(long sdSize) {
+		this.sdSize = sdSize;
 	}
 
-
-	public int getStatus() {
-		return status;
+	public long getSdUsed() {
+		return sdUsed;
 	}
 
-
-	public void setStatus(int status) {
-		this.status = status;
+	public void setSdUsed(long sdUsed) {
+		this.sdUsed = sdUsed;
 	}
 
-
-	public String getActionId() {
-		return actionId;
+	public int getState() {
+		return state;
 	}
 
-
-	public void setActionId(String actionId) {
-		this.actionId = actionId;
+	public void setState(int state) {
+		this.state = state;
 	}
 
+	public String getIp() {
+		return ip;
+	}
+
+	public void setIp(String ip) {
+		this.ip = ip;
+	}
+
+	public String getGw() {
+		return gw;
+	}
+
+	public void setGw(String gw) {
+		this.gw = gw;
+	}
+
+	public String getDns() {
+		return dns;
+	}
+
+	public void setDns(String dns) {
+		this.dns = dns;
+	}
+
+	public String getMac() {
+		return mac;
+	}
+
+	public void setMac(String mac) {
+		this.mac = mac;
+	}
+
+	public String getVersion() {
+		return version;
+	}
+
+	public void setVersion(String version) {
+		this.version = version;
+	}
+
+	public long getLastPingTime() {
+		return lastPingTime;
+	}
+
+	public void setLastPingTime(long lastPingTime) {
+		this.lastPingTime = lastPingTime;
+	}
+
+	public int getPingInterval() {
+		return pingInterval;
+	}
+
+	public void setPingInterval(int pingInterval) {
+		this.pingInterval = pingInterval;
+	}
 
 	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result
-				+ ((actionId == null) ? 0 : actionId.hashCode());
-		return result;
+	public String toString() {
+		return "DeviceRedisBean{" +
+				"deviceId='" + deviceId + '\'' +
+				", deviceSN='" + deviceSN + '\'' +
+				", sdSize=" + sdSize +
+				", sdUsed=" + sdUsed +
+				", state=" + state +
+				", ip='" + ip + '\'' +
+				", gw='" + gw + '\'' +
+				", dns='" + dns + '\'' +
+				", mac='" + mac + '\'' +
+				", version='" + version + '\'' +
+				", pingInterval=" + pingInterval +
+				", actions=" + actions +
+				", lastPingTime=" + lastPingTime +
+				'}';
 	}
 
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		DeviceRedisBean other = (DeviceRedisBean) obj;
-		if (actionId == null) {
-			if (other.actionId != null)
-				return false;
-		} else if (!actionId.equals(other.actionId))
-			return false;
-		return true;
+	public String getDeviceSN() {
+		return deviceSN;
 	}
 
-
-	public enum ControlAction{
-		play,pause,resume,stop,setPingInterval
+	public void setDeviceSN(String deviceSN) {
+		this.deviceSN = deviceSN;
 	}
+
 }

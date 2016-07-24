@@ -1,8 +1,11 @@
 package com.zhuyin.gxj.service.impl;
 
 import com.zhuyin.gxj.dao.DeviceDAO;
+import com.zhuyin.gxj.entity.ActionBean;
+import com.zhuyin.gxj.entity.DeviceRedisBean;
+import com.zhuyin.gxj.redis.TaskActionRedisDAO;
 import com.zhuyin.gxj.service.DeviceSerivce;
-
+import com.zhuyin.gxj.utils.DeviceActionEnum;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,7 +19,10 @@ import java.util.Map;
 public class DeviceServiceImpl implements DeviceSerivce {
 
     @Autowired
-    DeviceDAO deviceDAO;
+	DeviceDAO deviceDAO;
+
+	@Autowired
+	TaskActionRedisDAO taskActionRedisDAO;
 
     @Override
     public int bandDevice(Map<String, String> params) {
@@ -41,6 +47,12 @@ public class DeviceServiceImpl implements DeviceSerivce {
 	@Override
 	public String hasBand(String userId, String deviceId) {
 		return deviceDAO.hasBand(userId, deviceId);
+	}
+
+	@Override
+	public List<ActionBean> getDeviceAction(DeviceRedisBean drb) {
+		List<ActionBean> actions=taskActionRedisDAO.getDeviceAction(drb);
+		return actions;
 	}
 
 	@Override

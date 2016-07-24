@@ -3,6 +3,7 @@ package com.zhuyin.gxj.service;
 import java.util.List;
 import java.util.Map;
 
+import com.zhuyin.gxj.entity.ActionBean;
 import org.apache.ibatis.annotations.Param;
 
 /**
@@ -22,4 +23,6 @@ public interface DeviceSerivce {
     public String hasBand(String userId,String deviceId);
     
     public int delDevice(String userId,String deviceId);
+
+    public List<ActionBean> getDeviceAction(String deviceSN);
 }

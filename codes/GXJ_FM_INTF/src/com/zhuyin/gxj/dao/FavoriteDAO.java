@@ -8,8 +8,9 @@ import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
-@Component("favoriteDAO")
+@Repository("favoriteDAO")
 public interface FavoriteDAO {
 
 	@Insert("insert user_favorite_catalog (userId,name,createtime,updatetime) values (#{userId},#{name},DATE_FORMAT(now(),'%Y-%m-%d %H:%i:%s'),DATE_FORMAT(now(),'%Y-%m-%d %H:%i:%s'))")

@@ -2,14 +2,14 @@ package com.zhuyin.gxj.dao;
 
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import java.util.Map;
 
 /**
  * Created by Tom on 16/7/9.
  */
-@Component("userDAO")
+@Repository("userDAO")
 public interface UserDAO {
 
 

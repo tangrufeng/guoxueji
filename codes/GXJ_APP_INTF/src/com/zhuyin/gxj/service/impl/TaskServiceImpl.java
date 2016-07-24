@@ -1,18 +1,18 @@
 package com.zhuyin.gxj.service.impl;
 
+import com.zhuyin.gxj.dao.DeviceActionDAO;
+import com.zhuyin.gxj.dao.DeviceDAO;
 import com.zhuyin.gxj.dao.TaskDAO;
+import com.zhuyin.gxj.redis.TaskActionRedisDAO;
 import com.zhuyin.gxj.service.TaskService;
 
+import com.zhuyin.gxj.utils.DeviceActionEnum;
+import com.zhuyin.gxj.utils.TaskUtil;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created by Tom on 16/7/11.
@@ -25,6 +25,15 @@ public class TaskServiceImpl implements TaskService {
     @Autowired
     TaskDAO taskDAO;
 
+    @Autowired
+    TaskActionRedisDAO taskActionRedisDAO;
+
+    @Autowired
+    DeviceDAO deviceDAO;
+
+    @Autowired
+    DeviceActionDAO deviceActionDAO;
+
     @Override
     public int addTask(Map<String, Object> params) {
         logger.debug("before====>" + params);
@@ -36,8 +45,17 @@ public class TaskServiceImpl implements TaskService {
                 music.put("task_id", taskId + "");
                 taskDAO.addTaskAudio(music);
             }
-            
-            
+            String deviceId=String.valueOf(params.get("deviceId"));
+            String deviceSN=deviceDAO.getDeviceSNById(deviceId);
+            String actionId= TaskUtil.getTaskActionId();
+
+            Map<String,String> map=new HashMap<>();
+            map.put("id",actionId);
+            map.put("deviceId",deviceId);
+            map.put("taskId",String.valueOf(taskId));
+            map.put("action", DeviceActionEnum.setCronJob.name());
+            deviceActionDAO.addDeviceAction(map);
+            taskActionRedisDAO.addAction(deviceId,deviceSN,actionId,DeviceActionEnum.setCronJob.name());
         }
         logger.debug("after=====>" + params);
         return 0;
@@ -67,6 +85,9 @@ public class TaskServiceImpl implements TaskService {
 	public int deleteTaskAudio(String taskId, String audioId) {
 		return taskDAO.deleteTaskAudio(taskId, audioId);
 	}
-    
+
+    public static void main(String[] args) {
+        System.out.println(DeviceActionEnum.setCronJob.name());
+    }
     
 }

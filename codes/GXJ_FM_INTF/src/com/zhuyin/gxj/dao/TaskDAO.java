@@ -9,15 +9,16 @@ import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
-@Component("taskDAO")
+@Repository("taskDAO")
 public interface TaskDAO {
 
 	@Insert("insert into device_task (`tag`,`deviceId`,`weekday`,`begin`,`userId`,`createtime`,`updatetime`) values (#{tag},#{deviceId},#{weekDay},#{begin},#{userId},DATE_FORMAT(now(),'%Y-%m-%d %H:%i:%s'),DATE_FORMAT(now(),'%Y-%m-%d %H:%i:%s'))")
 	@Options(useGeneratedKeys=true, keyProperty="id")
 	public int addTask(Map<String,Object> params);
 
-	@Insert("INSERT INTO `task_audio` ( `task_id`, `audio_id`) VALUES (#{task_id}, #{audio_id}) on DUPLICATE KEY UPDATE status = 0,;")
+	@Insert("INSERT INTO `task_audio` ( `task_id`, `audio_id`) VALUES (#{task_id}, #{audio_id}) on DUPLICATE KEY UPDATE status = 0;")
 	public int addTaskAudio(Map<String,String> params);
 
 	@Select("select id,tag,weekday,begin from device_task where userId=#{userId} and deviceId=#{deviceId} and status=0")

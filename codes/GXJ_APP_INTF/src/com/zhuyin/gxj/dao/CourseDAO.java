@@ -43,6 +43,7 @@ public interface CourseDAO {
             SQL sql = getSelectSQLResult();
             StringBuilder sb = new StringBuilder(sql.toString());
             sb.append("name like '%"+params.get("key")+"%'");
+            appendAgeOrder(params,sb);
             appendPageSQL(params, sb);
             return sb.toString();
         }
@@ -63,8 +64,8 @@ public interface CourseDAO {
             sb.append("select * from (");
             sb.append(sql.toString());
 
-            appendAgeSQL(params, sb);
-            sb.append(" order by times desc limit 30) a ");
+            appendAgeOrder(params, sb);
+            sb.append(" , times desc limit 30) a ");
 
             appendPageSQL(params, sb);
             return sb.toString();
@@ -76,17 +77,17 @@ public interface CourseDAO {
             sb.append("select * from (");
             sb.append(sql.toString());
 
-            appendAgeSQL(params, sb);
-            sb.append(" order by create_time desc limit 30) a ");
+            appendAgeOrder(params, sb);
+            sb.append(" ,create_time desc limit 30) a ");
 
             appendPageSQL(params, sb);
             return sb.toString();
         }
 
 
-        private void appendAgeSQL(Map<String, String> params, StringBuilder sb) {
-            int ageMax = -1;
-            int ageMin = -1;
+        private void appendAgeOrder(Map<String, String> params, StringBuilder sb) {
+            int ageMax = 100; //不设置最大年龄,就长命百岁
+            int ageMin = 0;//没有最小年龄,就0岁
             try {
                 if (params.containsKey("maxAge")) {
                     ageMax = Integer.parseInt(params.get("maxAge"));
@@ -98,13 +99,7 @@ public interface CourseDAO {
             } catch (Exception e) {
                 logger.error(params, e);
             }
-            if (ageMax != -1.0) {
-                sb.append(" and (age_max is null or age_max >=" + ageMax + ")");
-            }
-
-            if (ageMin != -1.0) {
-                sb.append(" and (age_min is null or age_min <=" + ageMin + ")");
-            }
+            sb.append("order by (age_max>="+ageMax+" or age_max is null) and (age_min<="+ageMin+" or age_min is null)  desc");
         }
 
         private void appendPageSQL(Map<String, String> params, StringBuilder sb) {

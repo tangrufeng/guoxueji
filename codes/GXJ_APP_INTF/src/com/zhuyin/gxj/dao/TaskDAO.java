@@ -18,7 +18,7 @@ public interface TaskDAO {
 	@Options(useGeneratedKeys=true, keyProperty="id")
 	public int addTask(Map<String,Object> params);
 
-	@Insert("INSERT INTO `task_audio` ( `task_id`, `audio_id`) VALUES (#{task_id}, #{audio_id}) on DUPLICATE KEY UPDATE status = 0,;")
+	@Insert("INSERT INTO `task_audio` ( `task_id`, `audio_id`) VALUES (#{task_id}, #{audio_id}) on DUPLICATE KEY UPDATE status = 0;")
 	public int addTaskAudio(Map<String,String> params);
 
 	@Select("select id,tag,weekday,begin from device_task where userId=#{userId} and deviceId=#{deviceId} and status=0")
