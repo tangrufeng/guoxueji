@@ -35,7 +35,7 @@ public class DeviceRedisBean implements Serializable{
 
 	private int pingInterval=10000;
 
-	private List<ActionBean> actions=new ArrayList<>();
+	private List<ActionBean> actions=new ArrayList<ActionBean>();
 
 	public List<ActionBean> getActions() {
 		return actions;

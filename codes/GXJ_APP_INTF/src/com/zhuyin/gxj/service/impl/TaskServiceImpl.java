@@ -5,12 +5,14 @@ import com.zhuyin.gxj.dao.DeviceDAO;
 import com.zhuyin.gxj.dao.TaskDAO;
 import com.zhuyin.gxj.redis.TaskActionRedisDAO;
 import com.zhuyin.gxj.service.TaskService;
-
 import com.zhuyin.gxj.utils.DeviceActionEnum;
 import com.zhuyin.gxj.utils.TaskUtil;
+
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.*;
 
@@ -34,7 +36,11 @@ public class TaskServiceImpl implements TaskService {
     @Autowired
     DeviceActionDAO deviceActionDAO;
 
+    @Value("${gxj.cronjobListUrl}")
+    String cronjobListUrl="";
+    
     @Override
+    @Transactional
     public int addTask(Map<String, Object> params) {
         logger.debug("before====>" + params);
         int i = taskDAO.addTask(params);
@@ -46,16 +52,20 @@ public class TaskServiceImpl implements TaskService {
                 taskDAO.addTaskAudio(music);
             }
             String deviceId=String.valueOf(params.get("deviceId"));
-            String deviceSN=deviceDAO.getDeviceSNById(deviceId);
+            String mac=deviceDAO.getDeviceMACById(deviceId);
             String actionId= TaskUtil.getTaskActionId();
 
-            Map<String,String> map=new HashMap<>();
+            Map<String,String> map=new HashMap<String,String>();
             map.put("id",actionId);
             map.put("deviceId",deviceId);
             map.put("taskId",String.valueOf(taskId));
             map.put("action", DeviceActionEnum.setCronJob.name());
             deviceActionDAO.addDeviceAction(map);
-            taskActionRedisDAO.addAction(deviceId,deviceSN,actionId,DeviceActionEnum.setCronJob.name());
+            
+            cronjobListUrl=cronjobListUrl.replace("#{deviceMAC}", mac).replace("#{taskId}", String.valueOf(taskId));
+            Map<String, String> p=new HashMap<String, String>();
+            p.put("url", cronjobListUrl);
+            taskActionRedisDAO.addAction(deviceId,mac,actionId,DeviceActionEnum.setCronJob.name(),p);
         }
         logger.debug("after=====>" + params);
         return 0;

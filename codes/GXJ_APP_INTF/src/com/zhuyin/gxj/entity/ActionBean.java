@@ -17,7 +17,7 @@ public class ActionBean implements Serializable{
 
     private String id;
 
-    private Map<String,String> params=new HashMap<>();
+    private Map<String,String> params=new HashMap<String,String>();
 
     @Override
     public String toString() {

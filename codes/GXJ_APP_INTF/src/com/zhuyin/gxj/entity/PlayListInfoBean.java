@@ -10,7 +10,7 @@ public class PlayListInfoBean {
 
     private String FileType="";
 
-    private List<PlayListBean> classItems=new ArrayList<>();
+    private List<PlayListBean> classItems=new ArrayList<PlayListBean>();
 
     public String getFileType() {
         return FileType;

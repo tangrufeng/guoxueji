@@ -12,8 +12,9 @@ import org.springframework.http.HttpStatus;
  */
 public class Test {
 
-	public static String baseUrl = "http://localhost:8080/appintf";
-
+//	public static String baseUrl = "http://localhost:8080/appintf";
+	public static String baseUrl = "http://localhost:8080/GXJ_APP_INTF";
+	
 	public static void testAddPlayTask() {
 		String url = baseUrl + "/user/addPlayTask";
 		String content = "{\"userToken\": \"6D07D2ED48CA11E69FC2F81654C0D75C\", \"deviceId\": \"2\", \"tag\": \"fll\", "

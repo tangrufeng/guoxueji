@@ -32,11 +32,11 @@ public class PlayerServiceImpl implements PlayerService {
     }
 
     @Override
-    public PlayListInfoBean getPlayListInfo(String deviceSN) {
+    public PlayListInfoBean getPlayListInfo(String mac) {
         PlayListInfoBean pliBean=new PlayListInfoBean();
-        String deviceId = deviceDAO.getDeviceIdBySN(deviceSN);
+        String deviceId = deviceDAO.getDeviceIdByMAC(mac);
         List<Map<String, String>> tasks = playerDAO.getPlayTasks(deviceId);
-        List<PlayListBean> playList = new ArrayList<>();
+        List<PlayListBean> playList = new ArrayList<PlayListBean>();
         for (Map<String, String> task : tasks) {
             PlayListBean playListBean = new PlayListBean();
             String id = String.valueOf(task.get("id"));
@@ -49,7 +49,7 @@ public class PlayerServiceImpl implements PlayerService {
             playListBean.getMusics().addAll(items);
 
             String[] weekDayArr = weekDay.split(",");
-            List<Timer> timers=new ArrayList<>();
+            List<Timer> timers=new ArrayList<Timer>();
             for(String day:weekDayArr){
                 Timer timer=new Timer();
                 timer.setBgTime(begin);

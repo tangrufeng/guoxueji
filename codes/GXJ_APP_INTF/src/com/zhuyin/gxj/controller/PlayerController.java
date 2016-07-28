@@ -26,8 +26,8 @@ public class PlayerController {
 
     @RequestMapping("/player/getCornList")
     @ResponseBody
-    public PlayListInfoBean getCornTaskInfo(@RequestParam("deviceSN") String deviceSN, @RequestParam("taskId") String taskId) {
-        return playerService.getPlayListInfo(deviceSN);
+    public PlayListInfoBean getCornTaskInfo(@RequestParam("deviceMAC") String mac, @RequestParam("taskId") String taskId) {
+        return playerService.getPlayListInfo(mac);
     }
 
 }

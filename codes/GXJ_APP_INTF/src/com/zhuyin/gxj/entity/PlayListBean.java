@@ -14,7 +14,7 @@ public class PlayListBean {
 
     private String module="";
 
-    private List<PlayItemBean> musics=new ArrayList<>();
+    private List<PlayItemBean> musics=new ArrayList<PlayItemBean>();
 
     private List<Timer> timers=null;
 
