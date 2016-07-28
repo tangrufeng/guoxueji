@@ -20,4 +20,8 @@ public interface TaskService {
 	public int deleteTask(String userId, String taskId);
 
 	public int deleteTaskAudio(String taskId,String audioId);
+
+    public void addPlayList(int deviceId,List<Integer> audioIds);
+
+    public void addSetPingInterval(String usrToken);
 }

@@ -29,7 +29,7 @@ public class DeviceController {
 	@Autowired
 	DeviceSerivce deviceSerivce;
 
-	@RequestMapping("/user/addDevice")
+	@RequestMapping("/app/user/addDevice")
 	@ResponseBody
 	public ResultBean bandDevice(@RequestBody Map<String, String> map) {
 		ResultBean rb = new ResultBean();
@@ -71,7 +71,7 @@ public class DeviceController {
 		return rb;
 	}
 
-	@RequestMapping("/user/getMyDevices")
+	@RequestMapping("/app/user/getMyDevices")
 	@ResponseBody
 	public ResultListBean getMyDevices(
 			@RequestParam("userToken") String userToken) {
@@ -91,7 +91,7 @@ public class DeviceController {
 		return rlb;
 	}
 	
-	@RequestMapping("/user/delDevice")
+	@RequestMapping("/app/user/delDevice")
 	@ResponseBody
 	public ResultBean delDevices(@RequestBody Map<String,String> map){
 

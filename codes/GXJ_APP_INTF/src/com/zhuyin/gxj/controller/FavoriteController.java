@@ -30,7 +30,7 @@ public class FavoriteController {
 	@Autowired
 	AudioService audioService;
 	
-	@RequestMapping("/user/addCollectDir")
+	@RequestMapping("/app/user/addCollectDir")
 	@ResponseBody
 	public ResultBean addCatalog(@RequestBody Map<String, String> map) {
 		ResultBean rb = new ResultBean();
@@ -50,7 +50,7 @@ public class FavoriteController {
 		return rb;
 	}
 
-	@RequestMapping("/user/delCollectDir")
+	@RequestMapping("/app/user/delCollectDir")
 	@ResponseBody
 	public ResultBean deleteCatelog(@RequestBody Map<String, String> map) {
 		ResultBean rb = new ResultBean();
@@ -70,7 +70,7 @@ public class FavoriteController {
 		return rb;
 	}
 
-	@RequestMapping("/user/addCollectAudio")
+	@RequestMapping("/app/user/addCollectAudio")
 	@ResponseBody
 	public ResultBean addAudio(@RequestBody Map<String, Object> map) {
 		ResultBean rb = new ResultBean();
@@ -104,7 +104,7 @@ public class FavoriteController {
 		return rb;
 	}
 
-	@RequestMapping("/user/delCollectAudio")
+	@RequestMapping("/app/user/delCollectAudio")
 	@ResponseBody
 	public ResultBean deleteAudio(@RequestBody Map<String, Object> map) {
 		ResultBean rb = new ResultBean();
@@ -129,7 +129,7 @@ public class FavoriteController {
 		return rb;
 	}
 
-	@RequestMapping("/user/getCollectDirList")
+	@RequestMapping("/app/user/getCollectDirList")
 	@ResponseBody
 	public ResultListBean getCollectDirList(@RequestParam("userToken") String userToken) {
 		ResultListBean rlb=new ResultListBean();
@@ -146,7 +146,7 @@ public class FavoriteController {
 		return rlb;
 	}
 
-	@RequestMapping("/user/getCollectAudioList")
+	@RequestMapping("/app/user/getCollectAudioList")
 	@ResponseBody
 	public ResultListBean getCollectAudioList(@RequestParam("userToken") String userToken,
 			@RequestParam("dirId")String dirId) {

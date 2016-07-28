@@ -28,6 +28,7 @@
           p:host-name="${redis.host}" p:port="${redis.port}" p:password="${redis.pass}"  p:pool-config-ref="poolConfig"/>
 
     <bean id="redisTemplate" class="org.springframework.data.redis.core.RedisTemplate">
-        <property name="connectionFactory"   ref="connectionFactory" />
+        <property name="connectionFactory" ref="connectionFactory" />
+        <property name="enableTransactionSupport" value="true"/>
     </bean>
 </beans>

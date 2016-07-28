@@ -56,7 +56,8 @@ public class TaskActionRedisDAO {
 		}
 		device.getActions().add(actionBean);
 		logger.info(device);
-		return redisTemplate.opsForSet().add(deviceSN, device);
+		Long rst=redisTemplate.opsForSet().add(deviceSN, device);
+        return rst==null?0l:rst;
 	}
 
 	public DeviceRedisBean getDevice(String deviceSN) {
@@ -75,10 +76,11 @@ public class TaskActionRedisDAO {
 		DeviceRedisBean device = getDevice(newDevice.getDeviceSN());
 		if (device != null) {
 			actions.addAll(device.getActions());
-			redisTemplate.opsForSet().remove(newDevice.getDeviceSN(), device);
+			redisTemplate.opsForSet().remove(device.getDeviceSN(), device);
 			BeanUtils.copyProperties(newDevice, device);
+			device.getActions().clear();
 			device.setLastPingTime(System.currentTimeMillis());
-			redisTemplate.opsForSet().add(newDevice.getDeviceSN(), device);
+			redisTemplate.opsForSet().add(device.getDeviceSN(), device);
 		}
 		return actions;
 	}

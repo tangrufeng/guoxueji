@@ -12,11 +12,11 @@ import org.springframework.http.HttpStatus;
  */
 public class Test {
 
-//	public static String baseUrl = "http://localhost:8080/appintf";
-	public static String baseUrl = "http://localhost:8080/GXJ_APP_INTF";
+	public static String baseUrl = "http://localhost:8080/appintf";
+// public static String baseUrl = "http://localhost:8080/GXJ_APP_INTF";
 	
 	public static void testAddPlayTask() {
-		String url = baseUrl + "/user/addPlayTask";
+		String url = baseUrl + "/app/user/addPlayTask";
 		String content = "{\"userToken\": \"6D07D2ED48CA11E69FC2F81654C0D75C\", \"deviceId\": \"2\", \"tag\": \"fll\", "
 				+ "\"weekDay\": \"123\",\"begin\":\"10:00:00\",\"musics\":[{\"audio_id\":\"1\"},{\"audio_id\":\"2\"},"
 				+ "{\"audio_id\":\"3\"},{\"audio_id\":\"4\"},{\"audio_id\":\"5\"}]}";
@@ -24,49 +24,55 @@ public class Test {
 	}
 
 	public static void testAddDevice() {
-		String url = baseUrl + "/user/addDevice";
+		String url = baseUrl + "/app/user/addDevice";
 		String content = "{\"userToken\":\"6D07D2ED48CA11E69FC2F81654C0D75C\",\"sn\":\"111111\",\"name\":\"xxxaxxabb\",\"cityId\":\"13\",\"birthDay\":\"1985-11-18\"}";
 		sendPost(url, content);
 	}
 
 	public static void testControlDevice() {
-		String url = baseUrl + "/user/controlDevice";
+		String url = baseUrl + "/app/user/controlDevice";
 		String content = "{\"userToken\":\"6D07D2ED48CA11E69FC2F81654C0D75C\",\"deviceId\":\"111111\",\"action\":\"player\",\"cityId\":\"13\",\"birthDay\":\"1985-11-18\"}";
 		sendPost(url, content);
 	}
 //	public static void testBandDevice(){
-//		String url = baseUrl + "/user/addDevice";
+//		String url = baseUrl + "/app/user/addDevice";
 //		String content = "{\"userToken\":\"6D07D2ED48CA11E69FC2F81654C0D75C\",\"sn\":\"111111\",\"name\":\"xxxxx\",\"cityId\":\"12\",\"birthDay\":\"1985-10-17\"}";
 //		sendPost(url, content);
 //	}
 	
 	public static void testAddCollectDir() {
-		String url = baseUrl + "/user/addCollectDir";
+		String url = baseUrl + "/app/user/addCollectDir";
 		String content = "{\"userToken\":\"6D07D2ED48CA11E69FC2F81654C0D75C\",\"name\":\"xxxxx\"}";
 		sendPost(url, content);
 	}
 
 	public static void testAddCollectAudio() {
-		String url = baseUrl + "/user/addCollectAudio";
+		String url = baseUrl + "/app/user/addCollectAudio";
 		String content = "{\"userToken\":\"6D07D2ED48CA11E69FC2F81654C0D75C\",\"dirId\":\"1\",\"musics\":[{\"id\":\"1\",\"type\":\"2\"},{\"id\":\"23\",\"type\":\"1\"},{\"id\":\"24\",\"type\":\"1\"},{\"id\":\"25\",\"type\":\"1\"}]}";
 		sendPost(url, content);
 	}
 
 	public static void testDelCollect() {
-		String url = baseUrl + "/user/delCollectDir";
+		String url = baseUrl + "/app/user/delCollectDir";
 		String content = "{\"userToken\":\"6D07D2ED48CA11E69FC2F81654C0D75C\",\"dirId\":\"1\"}";
 		sendPost(url, content);
 	}
-	
+
+	public static void testAddPlayList(){
+		String url = baseUrl + "/app/user/addPlayList?token=48AF6ABD48A811E69FC2F81654C0D75C";
+		String content = "{\"userToken\":\"48AF6ABD48A811E69FC2F81654C0D75C\",\"deviceId\":\"2\",\"musics\":[{\"id\":\"1\",\"type\":\"2\"},{\"id\":\"23\",\"type\":\"1\"},{\"id\":\"24\",\"type\":\"1\"},{\"id\":\"25\",\"type\":\"1\"}]}";
+		sendPost(url, content);
+	}
 
 	public static void testDelCollectAudio() {
-		String url = baseUrl + "/user/delCollectAudio";
+		String url = baseUrl + "/app/user/delCollectAudio";
 		String content = "{\"userToken\":\"6D07D2ED48CA11E69FC2F81654C0D75C\",\"dirId\":\"1\",\"musics\":[{\"id\":\"1\"},{\"id\":\"2\"},{\"id\":\"3\"},{\"id\":\"4\"},{\"id\":\"5\"}]}";
 		sendPost(url, content);
 	}
 	
 	public static void main(String[] args) {
-		 testAddPlayTask();
+		testAddPlayList();
+//		 testAddPlayTask();
 //		 testAddDevice();
 //		 testAddCollectDir();
 //		testAddCollectAudio();

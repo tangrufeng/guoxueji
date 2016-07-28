@@ -3,12 +3,7 @@ package com.zhuyin.gxj.dao;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Options;
-import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Select;
-import org.apache.ibatis.annotations.Update;
-import org.springframework.stereotype.Component;
+import org.apache.ibatis.annotations.*;
 import org.springframework.stereotype.Repository;
 
 @Repository("taskDAO")
@@ -33,4 +28,24 @@ public interface TaskDAO {
 
 	@Update("update task_audio set status=1 where task_id=#{taskId} and audio_id=#{audioId}")
 	public int deleteTaskAudio(@Param("taskId") String taskId,@Param("audioId") String audioId);
+
+	@InsertProvider(type = TaskSQL.class,method = "insertPlayList")
+	@Options(flushCache =true, timeout =20000)
+	public int addDevicePlayList(Map<String,Object> params);
+
+
+	public class TaskSQL {
+		public String insertPlayList(final Map<String,Object> params){
+			List<Integer> audioIds=(List<Integer>)params.get("audioIds");
+			Integer deviceId=(Integer)params.get("deviceId");
+			StringBuilder sb=new StringBuilder("insert ignore into playlist_audio(audioId,deviceId) values");
+			for(int audioId:audioIds){
+				sb.append("("+audioId+","+deviceId+"),");
+			}
+			sb.deleteCharAt(sb.length()-1);
+			return sb.toString();
+		}
+
+	}
+
 }

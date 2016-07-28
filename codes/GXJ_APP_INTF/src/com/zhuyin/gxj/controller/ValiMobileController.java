@@ -29,7 +29,7 @@ public class ValiMobileController extends BaseController {
     @Autowired
     UserService userService;
 
-    @RequestMapping("app/sendValiCode")
+    @RequestMapping("/app/sendValiCode")
     @ResponseBody
     public ResultBean sendValiCode(@RequestParam String mobileNo) {
         ResultBean rst = new ResultBean();

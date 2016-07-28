@@ -162,4 +162,19 @@ public class DeviceRedisBean implements Serializable{
 		this.deviceSN = deviceSN;
 	}
 
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+
+		DeviceRedisBean that = (DeviceRedisBean) o;
+
+		return deviceSN != null ? deviceSN.equals(that.deviceSN) : that.deviceSN == null;
+
+	}
+
+	@Override
+	public int hashCode() {
+		return deviceSN != null ? deviceSN.hashCode() : 0;
+	}
 }

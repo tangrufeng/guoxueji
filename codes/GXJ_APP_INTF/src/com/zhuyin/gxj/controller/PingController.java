@@ -1,6 +1,8 @@
 package com.zhuyin.gxj.controller;
 
+import com.zhuyin.gxj.common.Common;
 import com.zhuyin.gxj.entity.*;
+import com.zhuyin.gxj.service.DeviceActionService;
 import com.zhuyin.gxj.service.DeviceSerivce;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -9,7 +11,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by Tom on 16/7/22.
@@ -19,6 +23,9 @@ public class PingController {
 
     @Autowired
     DeviceSerivce deviceSerivce;
+
+    @Autowired
+    DeviceActionService deviceActionService;
 
     @RequestMapping("/rest/ping")
     @ResponseBody
@@ -51,4 +58,21 @@ public class PingController {
         return arlb;
     }
 
+    @RequestMapping("/rest/receipt")
+    @ResponseBody
+    public ResultBean receipt(@RequestParam("action_id") String actionId,
+                              @RequestParam("type") int status,
+                              @RequestParam("device_mac")String mac){
+        ResultBean rb=new ResultBean();
+        if(status!=1 && status!=2){
+            rb.setErrCode(Common.ERRCODE_COMMON);
+            rb.setErrMsg("参数有误");
+        }
+
+        Map<String,String> params=new HashMap<>();
+        params.put("actionId",actionId);
+        params.put("status",""+status);
+        deviceActionService.updateActionStatus(params);
+        return rb;
+    }
 }

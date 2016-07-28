@@ -1,9 +1,6 @@
 package com.zhuyin.gxj.dao;
 
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Select;
-import org.apache.ibatis.annotations.Update;
+import org.apache.ibatis.annotations.*;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
@@ -24,7 +21,7 @@ public interface DeviceDAO {
     @Select("select count(1) from device where device_number= #{deviceSN}")
     public int isExist(String deviceSN);
     
-    @Select("select d.id,d.device_number sn,udr.name,udr.birth_month as birthMonth,udr.city,c.city_id as cityId from city c,device d, user_device_relation udr where c.city_id=udr.city and d.id=udr.deviceId and udr.userId=#{userId}")
+    @Select("select d.id,d.device_number sn,d.mac,udr.name,udr.birth_month as birthMonth,udr.city,c.city_id as cityId from city c,device d, user_device_relation udr where c.city_id=udr.city and d.id=udr.deviceId and udr.userId=#{userId}")
     public List<Map<String,String>> getDeviceList(String userId);
     
 

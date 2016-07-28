@@ -22,4 +22,9 @@ public class Common {
 
     public static final String ERRMSG_NEEDLOGIN="需要登录";
 
+
+    public static final int ERRCODE_NEEDBAND=-98;
+
+    public static final String ERRMSG_NEEDBAND="您还没绑定该设备";
+
 }
